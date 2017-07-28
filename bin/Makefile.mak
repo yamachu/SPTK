@@ -1,17 +1,22 @@
 CC		= cl
+CPP		= cl
 CL		= link
 CPU		= win32
 
-SPTKCFG	= /I..\include
+SPTKCFG	= /I..\include /I ..\windows
 SYSCFG	= /O2 /Ot /GL /FD /EHsc /MT /W3 /nologo /c /Zi /TC /D "NDEBUG" /D "HAVE_MEMSET" /D "HAVE_STRING_H" /D "WIN32" /D "_WINDOWS" /D "_CONSOLE" /D "_MBCS" /D "_CRT_SECURE_NO_WARNINGS"
+PITCHCFG	= /O2 /Ot /GL /FD /EHsc /MT /W3 /nologo /c /Zi /TP /D "NDEBUG" /D "HAVE_MEMSET" /D "HAVE_STRING_H" /D "WIN32" /D "_WINDOWS" /D "_CONSOLE" /D "_MBCS" /D "_CRT_SECURE_NO_WARNINGS"
 
 !IFNDEF DOUBLE
 SYSCFG	= $(SYSCFG) /D "FORMAT=\"float\""
+PITCHCFG	= $(PITCHCFG) /D "FORMAT=\"float\""
 !ELSE
 SYSCFG	= $(SYSCFG) /D "FORMAT=\"double\""
+PITCHCFG	= $(PITCHCFG) /D "FORMAT=\"double\""
 !ENDIF
 
 CFLAGS	= $(SYSCFG) $(SPTKCFG)
+PITCHFLAGS	= $(PITCHCFG) $(SPTKCFG)
 
 SPTKLIB	= ..\lib\SPTK.lib
 SYSLIB	= kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib
@@ -32,8 +37,10 @@ all: acep.exe acorr.exe agcep.exe amcep.exe \
 	par2lpc.exe phase.exe pitch.exe poledf.exe psgr.exe \
 	ramp.exe rawtowav.exe reverse.exe rmse.exe root_pol.exe sin.exe smcep.exe snr.exe \
 	sopr.exe spec.exe step.exe swab.exe symmetrize.exe train.exe transpose.exe uels.exe ulaw.exe \
-	us.exe vc.exe vopr.exe vq.exe vstat.exe vsum.exe window.exe x2x.exe \
+	us.exe vopr.exe vq.exe vstat.exe vsum.exe window.exe x2x.exe \
 	zcross.exe zerodf.exe 
+
+# vc.exe require hts_engine
 
 acep.exe : acep\acep.obj
 	$(CC) $(CFLAGS) /c $(@B)\$(@B).c
@@ -388,13 +395,32 @@ phase.exe : phase\phase.obj
 	$(CL) /LTCG /OUT:$@ $(LIBS) $(@B).obj
 
 pitch.exe : pitch\pitch.obj pitch\snack\jkGetF0.obj pitch\snack\sigproc.obj \
-	pitch\swipe\swipe.obj pitch\swipe\vector.obj
+	pitch\swipe\swipe.obj pitch\swipe\vector.obj \
+	pitch\reaper\epoch_tracker_main.obj \
+	pitch\reaper\core\file_resource.obj pitch\reaper\core\float_matrix.obj pitch\reaper\core\track.obj \
+	pitch\reaper\epoch_tracker\epoch_tracker.obj pitch\reaper\epoch_tracker\fd_filter.obj \
+	pitch\reaper\epoch_tracker\fft.obj pitch\reaper\epoch_tracker\lpc_analyzer.obj \
+	pitch\reaper\wave\codec_riff.obj pitch\reaper\wave\wave.obj pitch\reaper\wave\wave_io.obj
 	$(CC) $(CFLAGS) /c pitch\pitch.c
 	$(CC) $(CFLAGS) /c pitch\snack\jkGetF0.c
 	$(CC) $(CFLAGS) /c pitch\snack\sigproc.c
 	$(CC) $(CFLAGS) /c pitch\swipe\swipe.c
 	$(CC) $(CFLAGS) /c pitch\swipe\vector.c
-	$(CL) /LTCG /OUT:$@ $(LIBS) pitch.obj jkGetF0.obj sigproc.obj swipe.obj vector.obj
+	$(CPP) $(PITCHFLAGS) /c pitch\reaper\epoch_tracker_main.cc
+	$(CPP) $(PITCHFLAGS) /c pitch\reaper\core\file_resource.cc
+	$(CPP) $(PITCHFLAGS) /c pitch\reaper\core\float_matrix.cc
+	$(CPP) $(PITCHFLAGS) /c pitch\reaper\core\track.cc
+	$(CPP) $(PITCHFLAGS) /c pitch\reaper\epoch_tracker\epoch_tracker.cc
+	$(CPP) $(PITCHFLAGS) /c pitch\reaper\epoch_tracker\fd_filter.cc
+	$(CPP) $(PITCHFLAGS) /c pitch\reaper\epoch_tracker\fft.cc
+	$(CPP) $(PITCHFLAGS) /c pitch\reaper\epoch_tracker\lpc_analyzer.cc
+	$(CPP) $(PITCHFLAGS) /c pitch\reaper\wave\codec_riff.cc
+	$(CPP) $(PITCHFLAGS) /c pitch\reaper\wave\wave.cc
+	$(CPP) $(PITCHFLAGS) /c pitch\reaper\wave\wave_io.cc
+	$(CL) /LTCG /OUT:$@ $(LIBS) pitch.obj jkGetF0.obj sigproc.obj swipe.obj vector.obj epoch_tracker_main.obj file_resource.obj float_matrix.obj track.obj epoch_tracker.obj fd_filter.obj fft.obj lpc_analyzer.obj codec_riff.obj wave.obj wave_io.obj 
+
+.cc.obj:
+	$(CPP) $(PITCHFLAGS) /c $<
 
 poledf.exe : poledf\poledf.obj
 	$(CC) $(CFLAGS) /c $(@B)\$(@B).c
