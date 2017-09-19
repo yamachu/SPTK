@@ -1,4 +1,4 @@
-AM_CPPFLAGS = -I @top_srcdir@/include
+AM_CPPFLAGS = -I @top_srcdir@/include -fPIC
 bin_PROGRAMS = gnorm
 gnorm_SOURCES = _gnorm.c gnorm.c 
 gnorm_LDADD = @top_builddir@/lib/libSPTK.a

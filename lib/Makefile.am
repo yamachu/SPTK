@@ -1,4 +1,4 @@
-AM_CPPFLAGS = -I @top_srcdir@/include
+AM_CPPFLAGS = -I @top_srcdir@/include -fPIC
 lib_LIBRARIES = libSPTK.a
 libSPTK_a_SOURCES = agexp.c \
 	      cholesky.c \
