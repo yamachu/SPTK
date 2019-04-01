@@ -20,7 +20,7 @@ PITCHFLAGS	= $(PITCHCFG) $(SPTKCFG)
 
 SPTKLIB	= ..\lib\SPTK.lib
 SYSLIB	= kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib
-LIBS	=  /NOLOGO /SUBSYSTEM:CONSOLE /MACHINE:X86 $(SPTKLIB) $(SYSLIB)
+LIBS	=  /NOLOGO /SUBSYSTEM:CONSOLE $(SPTKLIB) $(SYSLIB)
 
 all: acep.exe acorr.exe agcep.exe amcep.exe \
 	average.exe b2mc.exe bcp.exe bcut.exe c2acr.exe \
