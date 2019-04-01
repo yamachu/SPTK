@@ -8,7 +8,7 @@
 /*                           Interdisciplinary Graduate School of    */
 /*                           Science and Engineering                 */
 /*                                                                   */
-/*                1996-2016  Nagoya Institute of Technology          */
+/*                1996-2017  Nagoya Institute of Technology          */
 /*                           Department of Computer Science          */
 /*                                                                   */
 /* All rights reserved.                                              */
@@ -44,7 +44,7 @@
 
 /****************************************************************
 
-    $Id: _fftcep.c,v 1.20 2016/12/22 10:53:03 fjst15124 Exp $
+    $Id$
 
     FFT Cepstral Analysis
 
@@ -79,6 +79,7 @@ void fftcep(double *sp, const int flng, double *c, const int m, int itr,
    if (x == NULL) {
       x = dgetmem(flng + flng);
       y = x + flng;
+      size = flng;
    }
    if (flng > size) {
       free(x);

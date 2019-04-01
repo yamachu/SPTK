@@ -139,79 +139,52 @@ am_libSPTK_a_OBJECTS = agexp.$(OBJEXT) cholesky.$(OBJEXT) \
 	invert.$(OBJEXT) matrix.$(OBJEXT) movem.$(OBJEXT) \
 	mseq.$(OBJEXT) theq.$(OBJEXT) toeplitz.$(OBJEXT)
 am__dirstamp = $(am__leading_dot)dirstamp
-nodist_libSPTK_a_OBJECTS = @top_srcdir@/bin/acep/_acep.$(OBJEXT) \
-	@top_srcdir@/bin/acorr/_acorr.$(OBJEXT) \
-	@top_srcdir@/bin/agcep/_agcep.$(OBJEXT) \
-	@top_srcdir@/bin/amcep/_amcep.$(OBJEXT) \
-	@top_srcdir@/bin/average/_average.$(OBJEXT) \
-	@top_srcdir@/bin/b2mc/_b2mc.$(OBJEXT) \
-	@top_srcdir@/bin/c2acr/_c2acr.$(OBJEXT) \
-	@top_srcdir@/bin/c2ir/_c2ir.$(OBJEXT) \
-	@top_srcdir@/bin/c2sp/_c2sp.$(OBJEXT) \
-	@top_srcdir@/bin/clip/_clip.$(OBJEXT) \
-	@top_srcdir@/bin/dct/_dct.$(OBJEXT) \
-	@top_srcdir@/bin/df2/_df2.$(OBJEXT) \
-	@top_srcdir@/bin/dfs/_dfs.$(OBJEXT) \
-	@top_srcdir@/bin/fft/_fft.$(OBJEXT) \
-	@top_srcdir@/bin/fft2/_fft2.$(OBJEXT) \
-	@top_srcdir@/bin/fftcep/_fftcep.$(OBJEXT) \
-	@top_srcdir@/bin/fftr/_fftr.$(OBJEXT) \
-	@top_srcdir@/bin/fftr2/_fftr2.$(OBJEXT) \
-	@top_srcdir@/bin/freqt/_freqt.$(OBJEXT) \
-	@top_srcdir@/bin/gc2gc/_gc2gc.$(OBJEXT) \
-	@top_srcdir@/bin/gcep/_gcep.$(OBJEXT) \
-	@top_srcdir@/bin/glsadf/_glsadf.$(OBJEXT) \
-	@top_srcdir@/bin/gmm/_gmm.$(OBJEXT) \
-	@top_srcdir@/bin/gnorm/_gnorm.$(OBJEXT) \
-	@top_srcdir@/bin/grpdelay/_grpdelay.$(OBJEXT) \
-	@top_srcdir@/bin/histogram/_histogram.$(OBJEXT) \
-	@top_srcdir@/bin/ifft/_ifft.$(OBJEXT) \
-	@top_srcdir@/bin/ifftr/_ifftr.$(OBJEXT) \
-	@top_srcdir@/bin/ifft2/_ifft2.$(OBJEXT) \
-	@top_srcdir@/bin/ignorm/_ignorm.$(OBJEXT) \
-	@top_srcdir@/bin/imsvq/_imsvq.$(OBJEXT) \
-	@top_srcdir@/bin/ivq/_ivq.$(OBJEXT) \
-	@top_srcdir@/bin/lbg/_lbg.$(OBJEXT) \
-	@top_srcdir@/bin/levdur/_levdur.$(OBJEXT) \
-	@top_srcdir@/bin/lmadf/_lmadf.$(OBJEXT) \
-	@top_srcdir@/bin/lpc/_lpc.$(OBJEXT) \
-	@top_srcdir@/bin/lpc2c/_lpc2c.$(OBJEXT) \
-	@top_srcdir@/bin/lpc2lsp/_lpc2lsp.$(OBJEXT) \
-	@top_srcdir@/bin/lpc2par/_lpc2par.$(OBJEXT) \
-	@top_srcdir@/bin/lsp2lpc/_lsp2lpc.$(OBJEXT) \
-	@top_srcdir@/bin/lsp2sp/_lsp2sp.$(OBJEXT) \
-	@top_srcdir@/bin/lspcheck/_lspcheck.$(OBJEXT) \
-	@top_srcdir@/bin/lspdf/_lspdf.$(OBJEXT) \
-	@top_srcdir@/bin/ltcdf/_ltcdf.$(OBJEXT) \
-	@top_srcdir@/bin/mc2b/_mc2b.$(OBJEXT) \
-	@top_srcdir@/bin/mcep/_mcep.$(OBJEXT) \
-	@top_srcdir@/bin/mfcc/_mfcc.$(OBJEXT) \
-	@top_srcdir@/bin/mgc2mgc/_mgc2mgc.$(OBJEXT) \
-	@top_srcdir@/bin/mgc2sp/_mgc2sp.$(OBJEXT) \
-	@top_srcdir@/bin/mgcep/_mgcep.$(OBJEXT) \
-	@top_srcdir@/bin/mglsadf/_mglsadf.$(OBJEXT) \
-	@top_srcdir@/bin/mlpg/_mlpg.$(OBJEXT) \
-	@top_srcdir@/bin/mlsadf/_mlsadf.$(OBJEXT) \
-	@top_srcdir@/bin/msvq/_msvq.$(OBJEXT) \
-	@top_srcdir@/bin/norm0/_norm0.$(OBJEXT) \
-	@top_srcdir@/bin/nrand/_nrand.$(OBJEXT) \
-	@top_srcdir@/bin/par2lpc/_par2lpc.$(OBJEXT) \
-	@top_srcdir@/bin/phase/_phase.$(OBJEXT) \
-	@top_srcdir@/bin/poledf/_poledf.$(OBJEXT) \
-	@top_srcdir@/bin/reverse/_reverse.$(OBJEXT) \
-	@top_srcdir@/bin/rmse/_rmse.$(OBJEXT) \
-	@top_srcdir@/bin/root_pol/_root_pol.$(OBJEXT) \
-	@top_srcdir@/bin/smcep/_smcep.$(OBJEXT) \
-	@top_srcdir@/bin/transpose/_transpose.$(OBJEXT) \
-	@top_srcdir@/bin/uels/_uels.$(OBJEXT) \
-	@top_srcdir@/bin/ulaw/_ulaw.$(OBJEXT) \
-	@top_srcdir@/bin/vc/_vc.$(OBJEXT) \
-	@top_srcdir@/bin/vq/_vq.$(OBJEXT) \
-	@top_srcdir@/bin/wavjoin/_wavjoin.$(OBJEXT) \
-	@top_srcdir@/bin/wavsplit/_wavsplit.$(OBJEXT) \
-	@top_srcdir@/bin/window/_window.$(OBJEXT) \
-	@top_srcdir@/bin/zcross/_zcross.$(OBJEXT) \
-	@top_srcdir@/bin/zerodf/_zerodf.$(OBJEXT)
+nodist_libSPTK_a_OBJECTS = ../bin/acep/_acep.$(OBJEXT) \
+	../bin/acorr/_acorr.$(OBJEXT) ../bin/agcep/_agcep.$(OBJEXT) \
+	../bin/amcep/_amcep.$(OBJEXT) \
+	../bin/average/_average.$(OBJEXT) ../bin/b2mc/_b2mc.$(OBJEXT) \
+	../bin/c2acr/_c2acr.$(OBJEXT) ../bin/c2ir/_c2ir.$(OBJEXT) \
+	../bin/c2sp/_c2sp.$(OBJEXT) ../bin/clip/_clip.$(OBJEXT) \
+	../bin/dct/_dct.$(OBJEXT) ../bin/df2/_df2.$(OBJEXT) \
+	../bin/dfs/_dfs.$(OBJEXT) ../bin/fft/_fft.$(OBJEXT) \
+	../bin/fft2/_fft2.$(OBJEXT) ../bin/fftcep/_fftcep.$(OBJEXT) \
+	../bin/fftr/_fftr.$(OBJEXT) ../bin/fftr2/_fftr2.$(OBJEXT) \
+	../bin/freqt/_freqt.$(OBJEXT) ../bin/gc2gc/_gc2gc.$(OBJEXT) \
+	../bin/gcep/_gcep.$(OBJEXT) ../bin/glsadf/_glsadf.$(OBJEXT) \
+	../bin/gmm/_gmm.$(OBJEXT) ../bin/gnorm/_gnorm.$(OBJEXT) \
+	../bin/grpdelay/_grpdelay.$(OBJEXT) \
+	../bin/histogram/_histogram.$(OBJEXT) \
+	../bin/ifft/_ifft.$(OBJEXT) ../bin/ifftr/_ifftr.$(OBJEXT) \
+	../bin/ifft2/_ifft2.$(OBJEXT) ../bin/ignorm/_ignorm.$(OBJEXT) \
+	../bin/imsvq/_imsvq.$(OBJEXT) ../bin/ivq/_ivq.$(OBJEXT) \
+	../bin/lbg/_lbg.$(OBJEXT) ../bin/levdur/_levdur.$(OBJEXT) \
+	../bin/lmadf/_lmadf.$(OBJEXT) ../bin/lpc/_lpc.$(OBJEXT) \
+	../bin/lpc2c/_lpc2c.$(OBJEXT) \
+	../bin/lpc2lsp/_lpc2lsp.$(OBJEXT) \
+	../bin/lpc2par/_lpc2par.$(OBJEXT) \
+	../bin/lsp2lpc/_lsp2lpc.$(OBJEXT) \
+	../bin/lsp2sp/_lsp2sp.$(OBJEXT) \
+	../bin/lspcheck/_lspcheck.$(OBJEXT) \
+	../bin/lspdf/_lspdf.$(OBJEXT) ../bin/ltcdf/_ltcdf.$(OBJEXT) \
+	../bin/mc2b/_mc2b.$(OBJEXT) ../bin/mcep/_mcep.$(OBJEXT) \
+	../bin/mfcc/_mfcc.$(OBJEXT) ../bin/mgc2mgc/_mgc2mgc.$(OBJEXT) \
+	../bin/mgc2sp/_mgc2sp.$(OBJEXT) ../bin/mgcep/_mgcep.$(OBJEXT) \
+	../bin/mglsadf/_mglsadf.$(OBJEXT) ../bin/mlpg/_mlpg.$(OBJEXT) \
+	../bin/mlsadf/_mlsadf.$(OBJEXT) ../bin/msvq/_msvq.$(OBJEXT) \
+	../bin/norm0/_norm0.$(OBJEXT) ../bin/nrand/_nrand.$(OBJEXT) \
+	../bin/par2lpc/_par2lpc.$(OBJEXT) \
+	../bin/phase/_phase.$(OBJEXT) ../bin/poledf/_poledf.$(OBJEXT) \
+	../bin/reverse/_reverse.$(OBJEXT) ../bin/rmse/_rmse.$(OBJEXT) \
+	../bin/root_pol/_root_pol.$(OBJEXT) \
+	../bin/smcep/_smcep.$(OBJEXT) \
+	../bin/transpose/_transpose.$(OBJEXT) \
+	../bin/uels/_uels.$(OBJEXT) ../bin/ulaw/_ulaw.$(OBJEXT) \
+	../bin/vc/_vc.$(OBJEXT) ../bin/vq/_vq.$(OBJEXT) \
+	../bin/wavjoin/_wavjoin.$(OBJEXT) \
+	../bin/wavsplit/_wavsplit.$(OBJEXT) \
+	../bin/window/_window.$(OBJEXT) \
+	../bin/zcross/_zcross.$(OBJEXT) \
+	../bin/zerodf/_zerodf.$(OBJEXT)
 libSPTK_a_OBJECTS = $(am_libSPTK_a_OBJECTS) \
 	$(nodist_libSPTK_a_OBJECTS)
 AM_V_P = $(am__v_P_@AM_V@)
@@ -399,80 +372,80 @@ libSPTK_a_SOURCES = agexp.c \
 	      theq.c \
 	      toeplitz.c
 
-nodist_libSPTK_a_SOURCES = @top_srcdir@/include/SPTK.h \
-		@top_srcdir@/bin/acep/_acep.c \
-		@top_srcdir@/bin/acorr/_acorr.c \
-		@top_srcdir@/bin/agcep/_agcep.c \
-		@top_srcdir@/bin/amcep/_amcep.c \
-		@top_srcdir@/bin/average/_average.c \
-		@top_srcdir@/bin/b2mc/_b2mc.c \
-		@top_srcdir@/bin/c2acr/_c2acr.c \
-		@top_srcdir@/bin/c2ir/_c2ir.c \
-		@top_srcdir@/bin/c2sp/_c2sp.c \
-		@top_srcdir@/bin/clip/_clip.c \
-		@top_srcdir@/bin/dct/_dct.c \
-		@top_srcdir@/bin/df2/_df2.c \
-		@top_srcdir@/bin/dfs/_dfs.c \
-		@top_srcdir@/bin/fft/_fft.c \
-		@top_srcdir@/bin/fft2/_fft2.c \
-		@top_srcdir@/bin/fftcep/_fftcep.c \
-		@top_srcdir@/bin/fftr/_fftr.c \
-		@top_srcdir@/bin/fftr2/_fftr2.c \
-		@top_srcdir@/bin/freqt/_freqt.c \
-		@top_srcdir@/bin/gc2gc/_gc2gc.c \
-		@top_srcdir@/bin/gcep/_gcep.c \
-		@top_srcdir@/bin/glsadf/_glsadf.c \
-		@top_srcdir@/bin/gmm/_gmm.c \
-		@top_srcdir@/bin/gnorm/_gnorm.c \
-		@top_srcdir@/bin/grpdelay/_grpdelay.c \
-		@top_srcdir@/bin/histogram/_histogram.c \
-		@top_srcdir@/bin/ifft/_ifft.c \
-		@top_srcdir@/bin/ifftr/_ifftr.c \
-		@top_srcdir@/bin/ifft2/_ifft2.c \
-		@top_srcdir@/bin/ignorm/_ignorm.c \
-		@top_srcdir@/bin/imsvq/_imsvq.c \
-		@top_srcdir@/bin/ivq/_ivq.c \
-		@top_srcdir@/bin/lbg/_lbg.c \
-		@top_srcdir@/bin/levdur/_levdur.c \
-		@top_srcdir@/bin/lmadf/_lmadf.c \
-		@top_srcdir@/bin/lpc/_lpc.c \
-		@top_srcdir@/bin/lpc2c/_lpc2c.c \
-		@top_srcdir@/bin/lpc2lsp/_lpc2lsp.c \
-		@top_srcdir@/bin/lpc2par/_lpc2par.c \
-		@top_srcdir@/bin/lsp2lpc/_lsp2lpc.c \
-		@top_srcdir@/bin/lsp2sp/_lsp2sp.c \
-		@top_srcdir@/bin/lspcheck/_lspcheck.c \
-		@top_srcdir@/bin/lspdf/_lspdf.c \
-		@top_srcdir@/bin/ltcdf/_ltcdf.c \
-		@top_srcdir@/bin/mc2b/_mc2b.c \
-		@top_srcdir@/bin/mcep/_mcep.c \
-		@top_srcdir@/bin/mfcc/_mfcc.c \
-		@top_srcdir@/bin/mgc2mgc/_mgc2mgc.c \
-		@top_srcdir@/bin/mgc2sp/_mgc2sp.c \
-		@top_srcdir@/bin/mgcep/_mgcep.c \
-		@top_srcdir@/bin/mglsadf/_mglsadf.c \
-		@top_srcdir@/bin/mlpg/_mlpg.c \
-		@top_srcdir@/bin/mlsadf/_mlsadf.c \
-		@top_srcdir@/bin/msvq/_msvq.c \
-		@top_srcdir@/bin/norm0/_norm0.c \
-		@top_srcdir@/bin/nrand/_nrand.c \
-		@top_srcdir@/bin/par2lpc/_par2lpc.c \
-		@top_srcdir@/bin/phase/_phase.c \
-		@top_srcdir@/bin/poledf/_poledf.c \
-		@top_srcdir@/bin/reverse/_reverse.c \
-		@top_srcdir@/bin/rmse/_rmse.c \
-		@top_srcdir@/bin/root_pol/_root_pol.c \
-		@top_srcdir@/bin/smcep/_smcep.c \
-		@top_srcdir@/bin/transpose/_transpose.c \
-		@top_srcdir@/bin/uels/_uels.c \
-		@top_srcdir@/bin/ulaw/_ulaw.c \
-		@top_srcdir@/bin/vc/_vc.c \
-		@top_srcdir@/bin/vq/_vq.c \
-		@top_srcdir@/bin/wavjoin/_wavjoin.c \
-		@top_srcdir@/bin/wavsplit/_wavsplit.c \
-		@top_srcdir@/bin/window/_window.c \
-		@top_srcdir@/bin/zcross/_zcross.c \
-		@top_srcdir@/bin/zerodf/_zerodf.c
+nodist_libSPTK_a_SOURCES = ../include/SPTK.h \
+		../bin/acep/_acep.c \
+		../bin/acorr/_acorr.c \
+		../bin/agcep/_agcep.c \
+		../bin/amcep/_amcep.c \
+		../bin/average/_average.c \
+		../bin/b2mc/_b2mc.c \
+		../bin/c2acr/_c2acr.c \
+		../bin/c2ir/_c2ir.c \
+		../bin/c2sp/_c2sp.c \
+		../bin/clip/_clip.c \
+		../bin/dct/_dct.c \
+		../bin/df2/_df2.c \
+		../bin/dfs/_dfs.c \
+		../bin/fft/_fft.c \
+		../bin/fft2/_fft2.c \
+		../bin/fftcep/_fftcep.c \
+		../bin/fftr/_fftr.c \
+		../bin/fftr2/_fftr2.c \
+		../bin/freqt/_freqt.c \
+		../bin/gc2gc/_gc2gc.c \
+		../bin/gcep/_gcep.c \
+		../bin/glsadf/_glsadf.c \
+		../bin/gmm/_gmm.c \
+		../bin/gnorm/_gnorm.c \
+		../bin/grpdelay/_grpdelay.c \
+		../bin/histogram/_histogram.c \
+		../bin/ifft/_ifft.c \
+		../bin/ifftr/_ifftr.c \
+		../bin/ifft2/_ifft2.c \
+		../bin/ignorm/_ignorm.c \
+		../bin/imsvq/_imsvq.c \
+		../bin/ivq/_ivq.c \
+		../bin/lbg/_lbg.c \
+		../bin/levdur/_levdur.c \
+		../bin/lmadf/_lmadf.c \
+		../bin/lpc/_lpc.c \
+		../bin/lpc2c/_lpc2c.c \
+		../bin/lpc2lsp/_lpc2lsp.c \
+		../bin/lpc2par/_lpc2par.c \
+		../bin/lsp2lpc/_lsp2lpc.c \
+		../bin/lsp2sp/_lsp2sp.c \
+		../bin/lspcheck/_lspcheck.c \
+		../bin/lspdf/_lspdf.c \
+		../bin/ltcdf/_ltcdf.c \
+		../bin/mc2b/_mc2b.c \
+		../bin/mcep/_mcep.c \
+		../bin/mfcc/_mfcc.c \
+		../bin/mgc2mgc/_mgc2mgc.c \
+		../bin/mgc2sp/_mgc2sp.c \
+		../bin/mgcep/_mgcep.c \
+		../bin/mglsadf/_mglsadf.c \
+		../bin/mlpg/_mlpg.c \
+		../bin/mlsadf/_mlsadf.c \
+		../bin/msvq/_msvq.c \
+		../bin/norm0/_norm0.c \
+		../bin/nrand/_nrand.c \
+		../bin/par2lpc/_par2lpc.c \
+		../bin/phase/_phase.c \
+		../bin/poledf/_poledf.c \
+		../bin/reverse/_reverse.c \
+		../bin/rmse/_rmse.c \
+		../bin/root_pol/_root_pol.c \
+		../bin/smcep/_smcep.c \
+		../bin/transpose/_transpose.c \
+		../bin/uels/_uels.c \
+		../bin/ulaw/_ulaw.c \
+		../bin/vc/_vc.c \
+		../bin/vq/_vq.c \
+		../bin/wavjoin/_wavjoin.c \
+		../bin/wavsplit/_wavsplit.c \
+		../bin/window/_window.c \
+		../bin/zcross/_zcross.c \
+		../bin/zerodf/_zerodf.c
 
 all: all-am
 
@@ -538,663 +511,592 @@ uninstall-libLIBRARIES:
 
 clean-libLIBRARIES:
 	-test -z "$(lib_LIBRARIES)" || rm -f $(lib_LIBRARIES)
-@top_srcdir@/bin/acep/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/acep
-	@: > @top_srcdir@/bin/acep/$(am__dirstamp)
-@top_srcdir@/bin/acep/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/acep/$(DEPDIR)
-	@: > @top_srcdir@/bin/acep/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/acep/_acep.$(OBJEXT):  \
-	@top_srcdir@/bin/acep/$(am__dirstamp) \
-	@top_srcdir@/bin/acep/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/acorr/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/acorr
-	@: > @top_srcdir@/bin/acorr/$(am__dirstamp)
-@top_srcdir@/bin/acorr/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/acorr/$(DEPDIR)
-	@: > @top_srcdir@/bin/acorr/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/acorr/_acorr.$(OBJEXT):  \
-	@top_srcdir@/bin/acorr/$(am__dirstamp) \
-	@top_srcdir@/bin/acorr/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/agcep/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/agcep
-	@: > @top_srcdir@/bin/agcep/$(am__dirstamp)
-@top_srcdir@/bin/agcep/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/agcep/$(DEPDIR)
-	@: > @top_srcdir@/bin/agcep/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/agcep/_agcep.$(OBJEXT):  \
-	@top_srcdir@/bin/agcep/$(am__dirstamp) \
-	@top_srcdir@/bin/agcep/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/amcep/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/amcep
-	@: > @top_srcdir@/bin/amcep/$(am__dirstamp)
-@top_srcdir@/bin/amcep/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/amcep/$(DEPDIR)
-	@: > @top_srcdir@/bin/amcep/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/amcep/_amcep.$(OBJEXT):  \
-	@top_srcdir@/bin/amcep/$(am__dirstamp) \
-	@top_srcdir@/bin/amcep/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/average/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/average
-	@: > @top_srcdir@/bin/average/$(am__dirstamp)
-@top_srcdir@/bin/average/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/average/$(DEPDIR)
-	@: > @top_srcdir@/bin/average/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/average/_average.$(OBJEXT):  \
-	@top_srcdir@/bin/average/$(am__dirstamp) \
-	@top_srcdir@/bin/average/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/b2mc/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/b2mc
-	@: > @top_srcdir@/bin/b2mc/$(am__dirstamp)
-@top_srcdir@/bin/b2mc/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/b2mc/$(DEPDIR)
-	@: > @top_srcdir@/bin/b2mc/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/b2mc/_b2mc.$(OBJEXT):  \
-	@top_srcdir@/bin/b2mc/$(am__dirstamp) \
-	@top_srcdir@/bin/b2mc/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/c2acr/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/c2acr
-	@: > @top_srcdir@/bin/c2acr/$(am__dirstamp)
-@top_srcdir@/bin/c2acr/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/c2acr/$(DEPDIR)
-	@: > @top_srcdir@/bin/c2acr/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/c2acr/_c2acr.$(OBJEXT):  \
-	@top_srcdir@/bin/c2acr/$(am__dirstamp) \
-	@top_srcdir@/bin/c2acr/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/c2ir/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/c2ir
-	@: > @top_srcdir@/bin/c2ir/$(am__dirstamp)
-@top_srcdir@/bin/c2ir/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/c2ir/$(DEPDIR)
-	@: > @top_srcdir@/bin/c2ir/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/c2ir/_c2ir.$(OBJEXT):  \
-	@top_srcdir@/bin/c2ir/$(am__dirstamp) \
-	@top_srcdir@/bin/c2ir/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/c2sp/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/c2sp
-	@: > @top_srcdir@/bin/c2sp/$(am__dirstamp)
-@top_srcdir@/bin/c2sp/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/c2sp/$(DEPDIR)
-	@: > @top_srcdir@/bin/c2sp/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/c2sp/_c2sp.$(OBJEXT):  \
-	@top_srcdir@/bin/c2sp/$(am__dirstamp) \
-	@top_srcdir@/bin/c2sp/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/clip/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/clip
-	@: > @top_srcdir@/bin/clip/$(am__dirstamp)
-@top_srcdir@/bin/clip/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/clip/$(DEPDIR)
-	@: > @top_srcdir@/bin/clip/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/clip/_clip.$(OBJEXT):  \
-	@top_srcdir@/bin/clip/$(am__dirstamp) \
-	@top_srcdir@/bin/clip/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/dct/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/dct
-	@: > @top_srcdir@/bin/dct/$(am__dirstamp)
-@top_srcdir@/bin/dct/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/dct/$(DEPDIR)
-	@: > @top_srcdir@/bin/dct/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/dct/_dct.$(OBJEXT):  \
-	@top_srcdir@/bin/dct/$(am__dirstamp) \
-	@top_srcdir@/bin/dct/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/df2/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/df2
-	@: > @top_srcdir@/bin/df2/$(am__dirstamp)
-@top_srcdir@/bin/df2/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/df2/$(DEPDIR)
-	@: > @top_srcdir@/bin/df2/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/df2/_df2.$(OBJEXT):  \
-	@top_srcdir@/bin/df2/$(am__dirstamp) \
-	@top_srcdir@/bin/df2/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/dfs/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/dfs
-	@: > @top_srcdir@/bin/dfs/$(am__dirstamp)
-@top_srcdir@/bin/dfs/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/dfs/$(DEPDIR)
-	@: > @top_srcdir@/bin/dfs/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/dfs/_dfs.$(OBJEXT):  \
-	@top_srcdir@/bin/dfs/$(am__dirstamp) \
-	@top_srcdir@/bin/dfs/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/fft/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/fft
-	@: > @top_srcdir@/bin/fft/$(am__dirstamp)
-@top_srcdir@/bin/fft/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/fft/$(DEPDIR)
-	@: > @top_srcdir@/bin/fft/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/fft/_fft.$(OBJEXT):  \
-	@top_srcdir@/bin/fft/$(am__dirstamp) \
-	@top_srcdir@/bin/fft/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/fft2/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/fft2
-	@: > @top_srcdir@/bin/fft2/$(am__dirstamp)
-@top_srcdir@/bin/fft2/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/fft2/$(DEPDIR)
-	@: > @top_srcdir@/bin/fft2/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/fft2/_fft2.$(OBJEXT):  \
-	@top_srcdir@/bin/fft2/$(am__dirstamp) \
-	@top_srcdir@/bin/fft2/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/fftcep/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/fftcep
-	@: > @top_srcdir@/bin/fftcep/$(am__dirstamp)
-@top_srcdir@/bin/fftcep/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/fftcep/$(DEPDIR)
-	@: > @top_srcdir@/bin/fftcep/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/fftcep/_fftcep.$(OBJEXT):  \
-	@top_srcdir@/bin/fftcep/$(am__dirstamp) \
-	@top_srcdir@/bin/fftcep/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/fftr/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/fftr
-	@: > @top_srcdir@/bin/fftr/$(am__dirstamp)
-@top_srcdir@/bin/fftr/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/fftr/$(DEPDIR)
-	@: > @top_srcdir@/bin/fftr/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/fftr/_fftr.$(OBJEXT):  \
-	@top_srcdir@/bin/fftr/$(am__dirstamp) \
-	@top_srcdir@/bin/fftr/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/fftr2/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/fftr2
-	@: > @top_srcdir@/bin/fftr2/$(am__dirstamp)
-@top_srcdir@/bin/fftr2/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/fftr2/$(DEPDIR)
-	@: > @top_srcdir@/bin/fftr2/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/fftr2/_fftr2.$(OBJEXT):  \
-	@top_srcdir@/bin/fftr2/$(am__dirstamp) \
-	@top_srcdir@/bin/fftr2/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/freqt/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/freqt
-	@: > @top_srcdir@/bin/freqt/$(am__dirstamp)
-@top_srcdir@/bin/freqt/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/freqt/$(DEPDIR)
-	@: > @top_srcdir@/bin/freqt/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/freqt/_freqt.$(OBJEXT):  \
-	@top_srcdir@/bin/freqt/$(am__dirstamp) \
-	@top_srcdir@/bin/freqt/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/gc2gc/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/gc2gc
-	@: > @top_srcdir@/bin/gc2gc/$(am__dirstamp)
-@top_srcdir@/bin/gc2gc/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/gc2gc/$(DEPDIR)
-	@: > @top_srcdir@/bin/gc2gc/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/gc2gc/_gc2gc.$(OBJEXT):  \
-	@top_srcdir@/bin/gc2gc/$(am__dirstamp) \
-	@top_srcdir@/bin/gc2gc/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/gcep/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/gcep
-	@: > @top_srcdir@/bin/gcep/$(am__dirstamp)
-@top_srcdir@/bin/gcep/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/gcep/$(DEPDIR)
-	@: > @top_srcdir@/bin/gcep/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/gcep/_gcep.$(OBJEXT):  \
-	@top_srcdir@/bin/gcep/$(am__dirstamp) \
-	@top_srcdir@/bin/gcep/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/glsadf/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/glsadf
-	@: > @top_srcdir@/bin/glsadf/$(am__dirstamp)
-@top_srcdir@/bin/glsadf/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/glsadf/$(DEPDIR)
-	@: > @top_srcdir@/bin/glsadf/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/glsadf/_glsadf.$(OBJEXT):  \
-	@top_srcdir@/bin/glsadf/$(am__dirstamp) \
-	@top_srcdir@/bin/glsadf/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/gmm/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/gmm
-	@: > @top_srcdir@/bin/gmm/$(am__dirstamp)
-@top_srcdir@/bin/gmm/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/gmm/$(DEPDIR)
-	@: > @top_srcdir@/bin/gmm/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/gmm/_gmm.$(OBJEXT):  \
-	@top_srcdir@/bin/gmm/$(am__dirstamp) \
-	@top_srcdir@/bin/gmm/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/gnorm/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/gnorm
-	@: > @top_srcdir@/bin/gnorm/$(am__dirstamp)
-@top_srcdir@/bin/gnorm/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/gnorm/$(DEPDIR)
-	@: > @top_srcdir@/bin/gnorm/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/gnorm/_gnorm.$(OBJEXT):  \
-	@top_srcdir@/bin/gnorm/$(am__dirstamp) \
-	@top_srcdir@/bin/gnorm/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/grpdelay/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/grpdelay
-	@: > @top_srcdir@/bin/grpdelay/$(am__dirstamp)
-@top_srcdir@/bin/grpdelay/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/grpdelay/$(DEPDIR)
-	@: > @top_srcdir@/bin/grpdelay/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/grpdelay/_grpdelay.$(OBJEXT):  \
-	@top_srcdir@/bin/grpdelay/$(am__dirstamp) \
-	@top_srcdir@/bin/grpdelay/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/histogram/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/histogram
-	@: > @top_srcdir@/bin/histogram/$(am__dirstamp)
-@top_srcdir@/bin/histogram/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/histogram/$(DEPDIR)
-	@: > @top_srcdir@/bin/histogram/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/histogram/_histogram.$(OBJEXT):  \
-	@top_srcdir@/bin/histogram/$(am__dirstamp) \
-	@top_srcdir@/bin/histogram/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/ifft/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/ifft
-	@: > @top_srcdir@/bin/ifft/$(am__dirstamp)
-@top_srcdir@/bin/ifft/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/ifft/$(DEPDIR)
-	@: > @top_srcdir@/bin/ifft/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/ifft/_ifft.$(OBJEXT):  \
-	@top_srcdir@/bin/ifft/$(am__dirstamp) \
-	@top_srcdir@/bin/ifft/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/ifftr/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/ifftr
-	@: > @top_srcdir@/bin/ifftr/$(am__dirstamp)
-@top_srcdir@/bin/ifftr/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/ifftr/$(DEPDIR)
-	@: > @top_srcdir@/bin/ifftr/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/ifftr/_ifftr.$(OBJEXT):  \
-	@top_srcdir@/bin/ifftr/$(am__dirstamp) \
-	@top_srcdir@/bin/ifftr/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/ifft2/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/ifft2
-	@: > @top_srcdir@/bin/ifft2/$(am__dirstamp)
-@top_srcdir@/bin/ifft2/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/ifft2/$(DEPDIR)
-	@: > @top_srcdir@/bin/ifft2/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/ifft2/_ifft2.$(OBJEXT):  \
-	@top_srcdir@/bin/ifft2/$(am__dirstamp) \
-	@top_srcdir@/bin/ifft2/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/ignorm/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/ignorm
-	@: > @top_srcdir@/bin/ignorm/$(am__dirstamp)
-@top_srcdir@/bin/ignorm/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/ignorm/$(DEPDIR)
-	@: > @top_srcdir@/bin/ignorm/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/ignorm/_ignorm.$(OBJEXT):  \
-	@top_srcdir@/bin/ignorm/$(am__dirstamp) \
-	@top_srcdir@/bin/ignorm/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/imsvq/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/imsvq
-	@: > @top_srcdir@/bin/imsvq/$(am__dirstamp)
-@top_srcdir@/bin/imsvq/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/imsvq/$(DEPDIR)
-	@: > @top_srcdir@/bin/imsvq/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/imsvq/_imsvq.$(OBJEXT):  \
-	@top_srcdir@/bin/imsvq/$(am__dirstamp) \
-	@top_srcdir@/bin/imsvq/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/ivq/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/ivq
-	@: > @top_srcdir@/bin/ivq/$(am__dirstamp)
-@top_srcdir@/bin/ivq/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/ivq/$(DEPDIR)
-	@: > @top_srcdir@/bin/ivq/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/ivq/_ivq.$(OBJEXT):  \
-	@top_srcdir@/bin/ivq/$(am__dirstamp) \
-	@top_srcdir@/bin/ivq/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/lbg/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/lbg
-	@: > @top_srcdir@/bin/lbg/$(am__dirstamp)
-@top_srcdir@/bin/lbg/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/lbg/$(DEPDIR)
-	@: > @top_srcdir@/bin/lbg/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/lbg/_lbg.$(OBJEXT):  \
-	@top_srcdir@/bin/lbg/$(am__dirstamp) \
-	@top_srcdir@/bin/lbg/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/levdur/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/levdur
-	@: > @top_srcdir@/bin/levdur/$(am__dirstamp)
-@top_srcdir@/bin/levdur/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/levdur/$(DEPDIR)
-	@: > @top_srcdir@/bin/levdur/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/levdur/_levdur.$(OBJEXT):  \
-	@top_srcdir@/bin/levdur/$(am__dirstamp) \
-	@top_srcdir@/bin/levdur/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/lmadf/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/lmadf
-	@: > @top_srcdir@/bin/lmadf/$(am__dirstamp)
-@top_srcdir@/bin/lmadf/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/lmadf/$(DEPDIR)
-	@: > @top_srcdir@/bin/lmadf/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/lmadf/_lmadf.$(OBJEXT):  \
-	@top_srcdir@/bin/lmadf/$(am__dirstamp) \
-	@top_srcdir@/bin/lmadf/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/lpc/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/lpc
-	@: > @top_srcdir@/bin/lpc/$(am__dirstamp)
-@top_srcdir@/bin/lpc/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/lpc/$(DEPDIR)
-	@: > @top_srcdir@/bin/lpc/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/lpc/_lpc.$(OBJEXT):  \
-	@top_srcdir@/bin/lpc/$(am__dirstamp) \
-	@top_srcdir@/bin/lpc/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/lpc2c/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/lpc2c
-	@: > @top_srcdir@/bin/lpc2c/$(am__dirstamp)
-@top_srcdir@/bin/lpc2c/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/lpc2c/$(DEPDIR)
-	@: > @top_srcdir@/bin/lpc2c/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/lpc2c/_lpc2c.$(OBJEXT):  \
-	@top_srcdir@/bin/lpc2c/$(am__dirstamp) \
-	@top_srcdir@/bin/lpc2c/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/lpc2lsp/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/lpc2lsp
-	@: > @top_srcdir@/bin/lpc2lsp/$(am__dirstamp)
-@top_srcdir@/bin/lpc2lsp/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/lpc2lsp/$(DEPDIR)
-	@: > @top_srcdir@/bin/lpc2lsp/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/lpc2lsp/_lpc2lsp.$(OBJEXT):  \
-	@top_srcdir@/bin/lpc2lsp/$(am__dirstamp) \
-	@top_srcdir@/bin/lpc2lsp/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/lpc2par/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/lpc2par
-	@: > @top_srcdir@/bin/lpc2par/$(am__dirstamp)
-@top_srcdir@/bin/lpc2par/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/lpc2par/$(DEPDIR)
-	@: > @top_srcdir@/bin/lpc2par/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/lpc2par/_lpc2par.$(OBJEXT):  \
-	@top_srcdir@/bin/lpc2par/$(am__dirstamp) \
-	@top_srcdir@/bin/lpc2par/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/lsp2lpc/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/lsp2lpc
-	@: > @top_srcdir@/bin/lsp2lpc/$(am__dirstamp)
-@top_srcdir@/bin/lsp2lpc/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/lsp2lpc/$(DEPDIR)
-	@: > @top_srcdir@/bin/lsp2lpc/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/lsp2lpc/_lsp2lpc.$(OBJEXT):  \
-	@top_srcdir@/bin/lsp2lpc/$(am__dirstamp) \
-	@top_srcdir@/bin/lsp2lpc/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/lsp2sp/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/lsp2sp
-	@: > @top_srcdir@/bin/lsp2sp/$(am__dirstamp)
-@top_srcdir@/bin/lsp2sp/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/lsp2sp/$(DEPDIR)
-	@: > @top_srcdir@/bin/lsp2sp/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/lsp2sp/_lsp2sp.$(OBJEXT):  \
-	@top_srcdir@/bin/lsp2sp/$(am__dirstamp) \
-	@top_srcdir@/bin/lsp2sp/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/lspcheck/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/lspcheck
-	@: > @top_srcdir@/bin/lspcheck/$(am__dirstamp)
-@top_srcdir@/bin/lspcheck/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/lspcheck/$(DEPDIR)
-	@: > @top_srcdir@/bin/lspcheck/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/lspcheck/_lspcheck.$(OBJEXT):  \
-	@top_srcdir@/bin/lspcheck/$(am__dirstamp) \
-	@top_srcdir@/bin/lspcheck/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/lspdf/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/lspdf
-	@: > @top_srcdir@/bin/lspdf/$(am__dirstamp)
-@top_srcdir@/bin/lspdf/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/lspdf/$(DEPDIR)
-	@: > @top_srcdir@/bin/lspdf/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/lspdf/_lspdf.$(OBJEXT):  \
-	@top_srcdir@/bin/lspdf/$(am__dirstamp) \
-	@top_srcdir@/bin/lspdf/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/ltcdf/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/ltcdf
-	@: > @top_srcdir@/bin/ltcdf/$(am__dirstamp)
-@top_srcdir@/bin/ltcdf/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/ltcdf/$(DEPDIR)
-	@: > @top_srcdir@/bin/ltcdf/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/ltcdf/_ltcdf.$(OBJEXT):  \
-	@top_srcdir@/bin/ltcdf/$(am__dirstamp) \
-	@top_srcdir@/bin/ltcdf/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/mc2b/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/mc2b
-	@: > @top_srcdir@/bin/mc2b/$(am__dirstamp)
-@top_srcdir@/bin/mc2b/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/mc2b/$(DEPDIR)
-	@: > @top_srcdir@/bin/mc2b/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/mc2b/_mc2b.$(OBJEXT):  \
-	@top_srcdir@/bin/mc2b/$(am__dirstamp) \
-	@top_srcdir@/bin/mc2b/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/mcep/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/mcep
-	@: > @top_srcdir@/bin/mcep/$(am__dirstamp)
-@top_srcdir@/bin/mcep/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/mcep/$(DEPDIR)
-	@: > @top_srcdir@/bin/mcep/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/mcep/_mcep.$(OBJEXT):  \
-	@top_srcdir@/bin/mcep/$(am__dirstamp) \
-	@top_srcdir@/bin/mcep/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/mfcc/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/mfcc
-	@: > @top_srcdir@/bin/mfcc/$(am__dirstamp)
-@top_srcdir@/bin/mfcc/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/mfcc/$(DEPDIR)
-	@: > @top_srcdir@/bin/mfcc/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/mfcc/_mfcc.$(OBJEXT):  \
-	@top_srcdir@/bin/mfcc/$(am__dirstamp) \
-	@top_srcdir@/bin/mfcc/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/mgc2mgc/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/mgc2mgc
-	@: > @top_srcdir@/bin/mgc2mgc/$(am__dirstamp)
-@top_srcdir@/bin/mgc2mgc/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/mgc2mgc/$(DEPDIR)
-	@: > @top_srcdir@/bin/mgc2mgc/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/mgc2mgc/_mgc2mgc.$(OBJEXT):  \
-	@top_srcdir@/bin/mgc2mgc/$(am__dirstamp) \
-	@top_srcdir@/bin/mgc2mgc/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/mgc2sp/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/mgc2sp
-	@: > @top_srcdir@/bin/mgc2sp/$(am__dirstamp)
-@top_srcdir@/bin/mgc2sp/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/mgc2sp/$(DEPDIR)
-	@: > @top_srcdir@/bin/mgc2sp/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/mgc2sp/_mgc2sp.$(OBJEXT):  \
-	@top_srcdir@/bin/mgc2sp/$(am__dirstamp) \
-	@top_srcdir@/bin/mgc2sp/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/mgcep/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/mgcep
-	@: > @top_srcdir@/bin/mgcep/$(am__dirstamp)
-@top_srcdir@/bin/mgcep/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/mgcep/$(DEPDIR)
-	@: > @top_srcdir@/bin/mgcep/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/mgcep/_mgcep.$(OBJEXT):  \
-	@top_srcdir@/bin/mgcep/$(am__dirstamp) \
-	@top_srcdir@/bin/mgcep/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/mglsadf/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/mglsadf
-	@: > @top_srcdir@/bin/mglsadf/$(am__dirstamp)
-@top_srcdir@/bin/mglsadf/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/mglsadf/$(DEPDIR)
-	@: > @top_srcdir@/bin/mglsadf/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/mglsadf/_mglsadf.$(OBJEXT):  \
-	@top_srcdir@/bin/mglsadf/$(am__dirstamp) \
-	@top_srcdir@/bin/mglsadf/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/mlpg/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/mlpg
-	@: > @top_srcdir@/bin/mlpg/$(am__dirstamp)
-@top_srcdir@/bin/mlpg/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/mlpg/$(DEPDIR)
-	@: > @top_srcdir@/bin/mlpg/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/mlpg/_mlpg.$(OBJEXT):  \
-	@top_srcdir@/bin/mlpg/$(am__dirstamp) \
-	@top_srcdir@/bin/mlpg/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/mlsadf/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/mlsadf
-	@: > @top_srcdir@/bin/mlsadf/$(am__dirstamp)
-@top_srcdir@/bin/mlsadf/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/mlsadf/$(DEPDIR)
-	@: > @top_srcdir@/bin/mlsadf/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/mlsadf/_mlsadf.$(OBJEXT):  \
-	@top_srcdir@/bin/mlsadf/$(am__dirstamp) \
-	@top_srcdir@/bin/mlsadf/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/msvq/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/msvq
-	@: > @top_srcdir@/bin/msvq/$(am__dirstamp)
-@top_srcdir@/bin/msvq/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/msvq/$(DEPDIR)
-	@: > @top_srcdir@/bin/msvq/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/msvq/_msvq.$(OBJEXT):  \
-	@top_srcdir@/bin/msvq/$(am__dirstamp) \
-	@top_srcdir@/bin/msvq/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/norm0/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/norm0
-	@: > @top_srcdir@/bin/norm0/$(am__dirstamp)
-@top_srcdir@/bin/norm0/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/norm0/$(DEPDIR)
-	@: > @top_srcdir@/bin/norm0/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/norm0/_norm0.$(OBJEXT):  \
-	@top_srcdir@/bin/norm0/$(am__dirstamp) \
-	@top_srcdir@/bin/norm0/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/nrand/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/nrand
-	@: > @top_srcdir@/bin/nrand/$(am__dirstamp)
-@top_srcdir@/bin/nrand/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/nrand/$(DEPDIR)
-	@: > @top_srcdir@/bin/nrand/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/nrand/_nrand.$(OBJEXT):  \
-	@top_srcdir@/bin/nrand/$(am__dirstamp) \
-	@top_srcdir@/bin/nrand/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/par2lpc/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/par2lpc
-	@: > @top_srcdir@/bin/par2lpc/$(am__dirstamp)
-@top_srcdir@/bin/par2lpc/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/par2lpc/$(DEPDIR)
-	@: > @top_srcdir@/bin/par2lpc/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/par2lpc/_par2lpc.$(OBJEXT):  \
-	@top_srcdir@/bin/par2lpc/$(am__dirstamp) \
-	@top_srcdir@/bin/par2lpc/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/phase/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/phase
-	@: > @top_srcdir@/bin/phase/$(am__dirstamp)
-@top_srcdir@/bin/phase/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/phase/$(DEPDIR)
-	@: > @top_srcdir@/bin/phase/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/phase/_phase.$(OBJEXT):  \
-	@top_srcdir@/bin/phase/$(am__dirstamp) \
-	@top_srcdir@/bin/phase/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/poledf/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/poledf
-	@: > @top_srcdir@/bin/poledf/$(am__dirstamp)
-@top_srcdir@/bin/poledf/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/poledf/$(DEPDIR)
-	@: > @top_srcdir@/bin/poledf/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/poledf/_poledf.$(OBJEXT):  \
-	@top_srcdir@/bin/poledf/$(am__dirstamp) \
-	@top_srcdir@/bin/poledf/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/reverse/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/reverse
-	@: > @top_srcdir@/bin/reverse/$(am__dirstamp)
-@top_srcdir@/bin/reverse/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/reverse/$(DEPDIR)
-	@: > @top_srcdir@/bin/reverse/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/reverse/_reverse.$(OBJEXT):  \
-	@top_srcdir@/bin/reverse/$(am__dirstamp) \
-	@top_srcdir@/bin/reverse/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/rmse/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/rmse
-	@: > @top_srcdir@/bin/rmse/$(am__dirstamp)
-@top_srcdir@/bin/rmse/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/rmse/$(DEPDIR)
-	@: > @top_srcdir@/bin/rmse/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/rmse/_rmse.$(OBJEXT):  \
-	@top_srcdir@/bin/rmse/$(am__dirstamp) \
-	@top_srcdir@/bin/rmse/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/root_pol/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/root_pol
-	@: > @top_srcdir@/bin/root_pol/$(am__dirstamp)
-@top_srcdir@/bin/root_pol/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/root_pol/$(DEPDIR)
-	@: > @top_srcdir@/bin/root_pol/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/root_pol/_root_pol.$(OBJEXT):  \
-	@top_srcdir@/bin/root_pol/$(am__dirstamp) \
-	@top_srcdir@/bin/root_pol/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/smcep/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/smcep
-	@: > @top_srcdir@/bin/smcep/$(am__dirstamp)
-@top_srcdir@/bin/smcep/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/smcep/$(DEPDIR)
-	@: > @top_srcdir@/bin/smcep/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/smcep/_smcep.$(OBJEXT):  \
-	@top_srcdir@/bin/smcep/$(am__dirstamp) \
-	@top_srcdir@/bin/smcep/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/transpose/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/transpose
-	@: > @top_srcdir@/bin/transpose/$(am__dirstamp)
-@top_srcdir@/bin/transpose/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/transpose/$(DEPDIR)
-	@: > @top_srcdir@/bin/transpose/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/transpose/_transpose.$(OBJEXT):  \
-	@top_srcdir@/bin/transpose/$(am__dirstamp) \
-	@top_srcdir@/bin/transpose/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/uels/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/uels
-	@: > @top_srcdir@/bin/uels/$(am__dirstamp)
-@top_srcdir@/bin/uels/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/uels/$(DEPDIR)
-	@: > @top_srcdir@/bin/uels/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/uels/_uels.$(OBJEXT):  \
-	@top_srcdir@/bin/uels/$(am__dirstamp) \
-	@top_srcdir@/bin/uels/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/ulaw/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/ulaw
-	@: > @top_srcdir@/bin/ulaw/$(am__dirstamp)
-@top_srcdir@/bin/ulaw/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/ulaw/$(DEPDIR)
-	@: > @top_srcdir@/bin/ulaw/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/ulaw/_ulaw.$(OBJEXT):  \
-	@top_srcdir@/bin/ulaw/$(am__dirstamp) \
-	@top_srcdir@/bin/ulaw/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/vc/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/vc
-	@: > @top_srcdir@/bin/vc/$(am__dirstamp)
-@top_srcdir@/bin/vc/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/vc/$(DEPDIR)
-	@: > @top_srcdir@/bin/vc/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/vc/_vc.$(OBJEXT):  \
-	@top_srcdir@/bin/vc/$(am__dirstamp) \
-	@top_srcdir@/bin/vc/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/vq/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/vq
-	@: > @top_srcdir@/bin/vq/$(am__dirstamp)
-@top_srcdir@/bin/vq/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/vq/$(DEPDIR)
-	@: > @top_srcdir@/bin/vq/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/vq/_vq.$(OBJEXT):  \
-	@top_srcdir@/bin/vq/$(am__dirstamp) \
-	@top_srcdir@/bin/vq/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/wavjoin/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/wavjoin
-	@: > @top_srcdir@/bin/wavjoin/$(am__dirstamp)
-@top_srcdir@/bin/wavjoin/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/wavjoin/$(DEPDIR)
-	@: > @top_srcdir@/bin/wavjoin/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/wavjoin/_wavjoin.$(OBJEXT):  \
-	@top_srcdir@/bin/wavjoin/$(am__dirstamp) \
-	@top_srcdir@/bin/wavjoin/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/wavsplit/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/wavsplit
-	@: > @top_srcdir@/bin/wavsplit/$(am__dirstamp)
-@top_srcdir@/bin/wavsplit/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/wavsplit/$(DEPDIR)
-	@: > @top_srcdir@/bin/wavsplit/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/wavsplit/_wavsplit.$(OBJEXT):  \
-	@top_srcdir@/bin/wavsplit/$(am__dirstamp) \
-	@top_srcdir@/bin/wavsplit/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/window/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/window
-	@: > @top_srcdir@/bin/window/$(am__dirstamp)
-@top_srcdir@/bin/window/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/window/$(DEPDIR)
-	@: > @top_srcdir@/bin/window/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/window/_window.$(OBJEXT):  \
-	@top_srcdir@/bin/window/$(am__dirstamp) \
-	@top_srcdir@/bin/window/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/zcross/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/zcross
-	@: > @top_srcdir@/bin/zcross/$(am__dirstamp)
-@top_srcdir@/bin/zcross/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/zcross/$(DEPDIR)
-	@: > @top_srcdir@/bin/zcross/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/zcross/_zcross.$(OBJEXT):  \
-	@top_srcdir@/bin/zcross/$(am__dirstamp) \
-	@top_srcdir@/bin/zcross/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/zerodf/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/zerodf
-	@: > @top_srcdir@/bin/zerodf/$(am__dirstamp)
-@top_srcdir@/bin/zerodf/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) @top_srcdir@/bin/zerodf/$(DEPDIR)
-	@: > @top_srcdir@/bin/zerodf/$(DEPDIR)/$(am__dirstamp)
-@top_srcdir@/bin/zerodf/_zerodf.$(OBJEXT):  \
-	@top_srcdir@/bin/zerodf/$(am__dirstamp) \
-	@top_srcdir@/bin/zerodf/$(DEPDIR)/$(am__dirstamp)
+../bin/acep/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/acep
+	@: > ../bin/acep/$(am__dirstamp)
+../bin/acep/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/acep/$(DEPDIR)
+	@: > ../bin/acep/$(DEPDIR)/$(am__dirstamp)
+../bin/acep/_acep.$(OBJEXT): ../bin/acep/$(am__dirstamp) \
+	../bin/acep/$(DEPDIR)/$(am__dirstamp)
+../bin/acorr/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/acorr
+	@: > ../bin/acorr/$(am__dirstamp)
+../bin/acorr/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/acorr/$(DEPDIR)
+	@: > ../bin/acorr/$(DEPDIR)/$(am__dirstamp)
+../bin/acorr/_acorr.$(OBJEXT): ../bin/acorr/$(am__dirstamp) \
+	../bin/acorr/$(DEPDIR)/$(am__dirstamp)
+../bin/agcep/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/agcep
+	@: > ../bin/agcep/$(am__dirstamp)
+../bin/agcep/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/agcep/$(DEPDIR)
+	@: > ../bin/agcep/$(DEPDIR)/$(am__dirstamp)
+../bin/agcep/_agcep.$(OBJEXT): ../bin/agcep/$(am__dirstamp) \
+	../bin/agcep/$(DEPDIR)/$(am__dirstamp)
+../bin/amcep/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/amcep
+	@: > ../bin/amcep/$(am__dirstamp)
+../bin/amcep/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/amcep/$(DEPDIR)
+	@: > ../bin/amcep/$(DEPDIR)/$(am__dirstamp)
+../bin/amcep/_amcep.$(OBJEXT): ../bin/amcep/$(am__dirstamp) \
+	../bin/amcep/$(DEPDIR)/$(am__dirstamp)
+../bin/average/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/average
+	@: > ../bin/average/$(am__dirstamp)
+../bin/average/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/average/$(DEPDIR)
+	@: > ../bin/average/$(DEPDIR)/$(am__dirstamp)
+../bin/average/_average.$(OBJEXT): ../bin/average/$(am__dirstamp) \
+	../bin/average/$(DEPDIR)/$(am__dirstamp)
+../bin/b2mc/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/b2mc
+	@: > ../bin/b2mc/$(am__dirstamp)
+../bin/b2mc/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/b2mc/$(DEPDIR)
+	@: > ../bin/b2mc/$(DEPDIR)/$(am__dirstamp)
+../bin/b2mc/_b2mc.$(OBJEXT): ../bin/b2mc/$(am__dirstamp) \
+	../bin/b2mc/$(DEPDIR)/$(am__dirstamp)
+../bin/c2acr/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/c2acr
+	@: > ../bin/c2acr/$(am__dirstamp)
+../bin/c2acr/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/c2acr/$(DEPDIR)
+	@: > ../bin/c2acr/$(DEPDIR)/$(am__dirstamp)
+../bin/c2acr/_c2acr.$(OBJEXT): ../bin/c2acr/$(am__dirstamp) \
+	../bin/c2acr/$(DEPDIR)/$(am__dirstamp)
+../bin/c2ir/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/c2ir
+	@: > ../bin/c2ir/$(am__dirstamp)
+../bin/c2ir/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/c2ir/$(DEPDIR)
+	@: > ../bin/c2ir/$(DEPDIR)/$(am__dirstamp)
+../bin/c2ir/_c2ir.$(OBJEXT): ../bin/c2ir/$(am__dirstamp) \
+	../bin/c2ir/$(DEPDIR)/$(am__dirstamp)
+../bin/c2sp/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/c2sp
+	@: > ../bin/c2sp/$(am__dirstamp)
+../bin/c2sp/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/c2sp/$(DEPDIR)
+	@: > ../bin/c2sp/$(DEPDIR)/$(am__dirstamp)
+../bin/c2sp/_c2sp.$(OBJEXT): ../bin/c2sp/$(am__dirstamp) \
+	../bin/c2sp/$(DEPDIR)/$(am__dirstamp)
+../bin/clip/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/clip
+	@: > ../bin/clip/$(am__dirstamp)
+../bin/clip/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/clip/$(DEPDIR)
+	@: > ../bin/clip/$(DEPDIR)/$(am__dirstamp)
+../bin/clip/_clip.$(OBJEXT): ../bin/clip/$(am__dirstamp) \
+	../bin/clip/$(DEPDIR)/$(am__dirstamp)
+../bin/dct/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/dct
+	@: > ../bin/dct/$(am__dirstamp)
+../bin/dct/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/dct/$(DEPDIR)
+	@: > ../bin/dct/$(DEPDIR)/$(am__dirstamp)
+../bin/dct/_dct.$(OBJEXT): ../bin/dct/$(am__dirstamp) \
+	../bin/dct/$(DEPDIR)/$(am__dirstamp)
+../bin/df2/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/df2
+	@: > ../bin/df2/$(am__dirstamp)
+../bin/df2/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/df2/$(DEPDIR)
+	@: > ../bin/df2/$(DEPDIR)/$(am__dirstamp)
+../bin/df2/_df2.$(OBJEXT): ../bin/df2/$(am__dirstamp) \
+	../bin/df2/$(DEPDIR)/$(am__dirstamp)
+../bin/dfs/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/dfs
+	@: > ../bin/dfs/$(am__dirstamp)
+../bin/dfs/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/dfs/$(DEPDIR)
+	@: > ../bin/dfs/$(DEPDIR)/$(am__dirstamp)
+../bin/dfs/_dfs.$(OBJEXT): ../bin/dfs/$(am__dirstamp) \
+	../bin/dfs/$(DEPDIR)/$(am__dirstamp)
+../bin/fft/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/fft
+	@: > ../bin/fft/$(am__dirstamp)
+../bin/fft/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/fft/$(DEPDIR)
+	@: > ../bin/fft/$(DEPDIR)/$(am__dirstamp)
+../bin/fft/_fft.$(OBJEXT): ../bin/fft/$(am__dirstamp) \
+	../bin/fft/$(DEPDIR)/$(am__dirstamp)
+../bin/fft2/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/fft2
+	@: > ../bin/fft2/$(am__dirstamp)
+../bin/fft2/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/fft2/$(DEPDIR)
+	@: > ../bin/fft2/$(DEPDIR)/$(am__dirstamp)
+../bin/fft2/_fft2.$(OBJEXT): ../bin/fft2/$(am__dirstamp) \
+	../bin/fft2/$(DEPDIR)/$(am__dirstamp)
+../bin/fftcep/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/fftcep
+	@: > ../bin/fftcep/$(am__dirstamp)
+../bin/fftcep/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/fftcep/$(DEPDIR)
+	@: > ../bin/fftcep/$(DEPDIR)/$(am__dirstamp)
+../bin/fftcep/_fftcep.$(OBJEXT): ../bin/fftcep/$(am__dirstamp) \
+	../bin/fftcep/$(DEPDIR)/$(am__dirstamp)
+../bin/fftr/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/fftr
+	@: > ../bin/fftr/$(am__dirstamp)
+../bin/fftr/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/fftr/$(DEPDIR)
+	@: > ../bin/fftr/$(DEPDIR)/$(am__dirstamp)
+../bin/fftr/_fftr.$(OBJEXT): ../bin/fftr/$(am__dirstamp) \
+	../bin/fftr/$(DEPDIR)/$(am__dirstamp)
+../bin/fftr2/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/fftr2
+	@: > ../bin/fftr2/$(am__dirstamp)
+../bin/fftr2/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/fftr2/$(DEPDIR)
+	@: > ../bin/fftr2/$(DEPDIR)/$(am__dirstamp)
+../bin/fftr2/_fftr2.$(OBJEXT): ../bin/fftr2/$(am__dirstamp) \
+	../bin/fftr2/$(DEPDIR)/$(am__dirstamp)
+../bin/freqt/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/freqt
+	@: > ../bin/freqt/$(am__dirstamp)
+../bin/freqt/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/freqt/$(DEPDIR)
+	@: > ../bin/freqt/$(DEPDIR)/$(am__dirstamp)
+../bin/freqt/_freqt.$(OBJEXT): ../bin/freqt/$(am__dirstamp) \
+	../bin/freqt/$(DEPDIR)/$(am__dirstamp)
+../bin/gc2gc/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/gc2gc
+	@: > ../bin/gc2gc/$(am__dirstamp)
+../bin/gc2gc/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/gc2gc/$(DEPDIR)
+	@: > ../bin/gc2gc/$(DEPDIR)/$(am__dirstamp)
+../bin/gc2gc/_gc2gc.$(OBJEXT): ../bin/gc2gc/$(am__dirstamp) \
+	../bin/gc2gc/$(DEPDIR)/$(am__dirstamp)
+../bin/gcep/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/gcep
+	@: > ../bin/gcep/$(am__dirstamp)
+../bin/gcep/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/gcep/$(DEPDIR)
+	@: > ../bin/gcep/$(DEPDIR)/$(am__dirstamp)
+../bin/gcep/_gcep.$(OBJEXT): ../bin/gcep/$(am__dirstamp) \
+	../bin/gcep/$(DEPDIR)/$(am__dirstamp)
+../bin/glsadf/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/glsadf
+	@: > ../bin/glsadf/$(am__dirstamp)
+../bin/glsadf/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/glsadf/$(DEPDIR)
+	@: > ../bin/glsadf/$(DEPDIR)/$(am__dirstamp)
+../bin/glsadf/_glsadf.$(OBJEXT): ../bin/glsadf/$(am__dirstamp) \
+	../bin/glsadf/$(DEPDIR)/$(am__dirstamp)
+../bin/gmm/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/gmm
+	@: > ../bin/gmm/$(am__dirstamp)
+../bin/gmm/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/gmm/$(DEPDIR)
+	@: > ../bin/gmm/$(DEPDIR)/$(am__dirstamp)
+../bin/gmm/_gmm.$(OBJEXT): ../bin/gmm/$(am__dirstamp) \
+	../bin/gmm/$(DEPDIR)/$(am__dirstamp)
+../bin/gnorm/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/gnorm
+	@: > ../bin/gnorm/$(am__dirstamp)
+../bin/gnorm/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/gnorm/$(DEPDIR)
+	@: > ../bin/gnorm/$(DEPDIR)/$(am__dirstamp)
+../bin/gnorm/_gnorm.$(OBJEXT): ../bin/gnorm/$(am__dirstamp) \
+	../bin/gnorm/$(DEPDIR)/$(am__dirstamp)
+../bin/grpdelay/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/grpdelay
+	@: > ../bin/grpdelay/$(am__dirstamp)
+../bin/grpdelay/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/grpdelay/$(DEPDIR)
+	@: > ../bin/grpdelay/$(DEPDIR)/$(am__dirstamp)
+../bin/grpdelay/_grpdelay.$(OBJEXT): ../bin/grpdelay/$(am__dirstamp) \
+	../bin/grpdelay/$(DEPDIR)/$(am__dirstamp)
+../bin/histogram/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/histogram
+	@: > ../bin/histogram/$(am__dirstamp)
+../bin/histogram/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/histogram/$(DEPDIR)
+	@: > ../bin/histogram/$(DEPDIR)/$(am__dirstamp)
+../bin/histogram/_histogram.$(OBJEXT):  \
+	../bin/histogram/$(am__dirstamp) \
+	../bin/histogram/$(DEPDIR)/$(am__dirstamp)
+../bin/ifft/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/ifft
+	@: > ../bin/ifft/$(am__dirstamp)
+../bin/ifft/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/ifft/$(DEPDIR)
+	@: > ../bin/ifft/$(DEPDIR)/$(am__dirstamp)
+../bin/ifft/_ifft.$(OBJEXT): ../bin/ifft/$(am__dirstamp) \
+	../bin/ifft/$(DEPDIR)/$(am__dirstamp)
+../bin/ifftr/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/ifftr
+	@: > ../bin/ifftr/$(am__dirstamp)
+../bin/ifftr/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/ifftr/$(DEPDIR)
+	@: > ../bin/ifftr/$(DEPDIR)/$(am__dirstamp)
+../bin/ifftr/_ifftr.$(OBJEXT): ../bin/ifftr/$(am__dirstamp) \
+	../bin/ifftr/$(DEPDIR)/$(am__dirstamp)
+../bin/ifft2/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/ifft2
+	@: > ../bin/ifft2/$(am__dirstamp)
+../bin/ifft2/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/ifft2/$(DEPDIR)
+	@: > ../bin/ifft2/$(DEPDIR)/$(am__dirstamp)
+../bin/ifft2/_ifft2.$(OBJEXT): ../bin/ifft2/$(am__dirstamp) \
+	../bin/ifft2/$(DEPDIR)/$(am__dirstamp)
+../bin/ignorm/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/ignorm
+	@: > ../bin/ignorm/$(am__dirstamp)
+../bin/ignorm/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/ignorm/$(DEPDIR)
+	@: > ../bin/ignorm/$(DEPDIR)/$(am__dirstamp)
+../bin/ignorm/_ignorm.$(OBJEXT): ../bin/ignorm/$(am__dirstamp) \
+	../bin/ignorm/$(DEPDIR)/$(am__dirstamp)
+../bin/imsvq/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/imsvq
+	@: > ../bin/imsvq/$(am__dirstamp)
+../bin/imsvq/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/imsvq/$(DEPDIR)
+	@: > ../bin/imsvq/$(DEPDIR)/$(am__dirstamp)
+../bin/imsvq/_imsvq.$(OBJEXT): ../bin/imsvq/$(am__dirstamp) \
+	../bin/imsvq/$(DEPDIR)/$(am__dirstamp)
+../bin/ivq/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/ivq
+	@: > ../bin/ivq/$(am__dirstamp)
+../bin/ivq/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/ivq/$(DEPDIR)
+	@: > ../bin/ivq/$(DEPDIR)/$(am__dirstamp)
+../bin/ivq/_ivq.$(OBJEXT): ../bin/ivq/$(am__dirstamp) \
+	../bin/ivq/$(DEPDIR)/$(am__dirstamp)
+../bin/lbg/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/lbg
+	@: > ../bin/lbg/$(am__dirstamp)
+../bin/lbg/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/lbg/$(DEPDIR)
+	@: > ../bin/lbg/$(DEPDIR)/$(am__dirstamp)
+../bin/lbg/_lbg.$(OBJEXT): ../bin/lbg/$(am__dirstamp) \
+	../bin/lbg/$(DEPDIR)/$(am__dirstamp)
+../bin/levdur/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/levdur
+	@: > ../bin/levdur/$(am__dirstamp)
+../bin/levdur/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/levdur/$(DEPDIR)
+	@: > ../bin/levdur/$(DEPDIR)/$(am__dirstamp)
+../bin/levdur/_levdur.$(OBJEXT): ../bin/levdur/$(am__dirstamp) \
+	../bin/levdur/$(DEPDIR)/$(am__dirstamp)
+../bin/lmadf/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/lmadf
+	@: > ../bin/lmadf/$(am__dirstamp)
+../bin/lmadf/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/lmadf/$(DEPDIR)
+	@: > ../bin/lmadf/$(DEPDIR)/$(am__dirstamp)
+../bin/lmadf/_lmadf.$(OBJEXT): ../bin/lmadf/$(am__dirstamp) \
+	../bin/lmadf/$(DEPDIR)/$(am__dirstamp)
+../bin/lpc/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/lpc
+	@: > ../bin/lpc/$(am__dirstamp)
+../bin/lpc/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/lpc/$(DEPDIR)
+	@: > ../bin/lpc/$(DEPDIR)/$(am__dirstamp)
+../bin/lpc/_lpc.$(OBJEXT): ../bin/lpc/$(am__dirstamp) \
+	../bin/lpc/$(DEPDIR)/$(am__dirstamp)
+../bin/lpc2c/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/lpc2c
+	@: > ../bin/lpc2c/$(am__dirstamp)
+../bin/lpc2c/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/lpc2c/$(DEPDIR)
+	@: > ../bin/lpc2c/$(DEPDIR)/$(am__dirstamp)
+../bin/lpc2c/_lpc2c.$(OBJEXT): ../bin/lpc2c/$(am__dirstamp) \
+	../bin/lpc2c/$(DEPDIR)/$(am__dirstamp)
+../bin/lpc2lsp/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/lpc2lsp
+	@: > ../bin/lpc2lsp/$(am__dirstamp)
+../bin/lpc2lsp/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/lpc2lsp/$(DEPDIR)
+	@: > ../bin/lpc2lsp/$(DEPDIR)/$(am__dirstamp)
+../bin/lpc2lsp/_lpc2lsp.$(OBJEXT): ../bin/lpc2lsp/$(am__dirstamp) \
+	../bin/lpc2lsp/$(DEPDIR)/$(am__dirstamp)
+../bin/lpc2par/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/lpc2par
+	@: > ../bin/lpc2par/$(am__dirstamp)
+../bin/lpc2par/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/lpc2par/$(DEPDIR)
+	@: > ../bin/lpc2par/$(DEPDIR)/$(am__dirstamp)
+../bin/lpc2par/_lpc2par.$(OBJEXT): ../bin/lpc2par/$(am__dirstamp) \
+	../bin/lpc2par/$(DEPDIR)/$(am__dirstamp)
+../bin/lsp2lpc/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/lsp2lpc
+	@: > ../bin/lsp2lpc/$(am__dirstamp)
+../bin/lsp2lpc/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/lsp2lpc/$(DEPDIR)
+	@: > ../bin/lsp2lpc/$(DEPDIR)/$(am__dirstamp)
+../bin/lsp2lpc/_lsp2lpc.$(OBJEXT): ../bin/lsp2lpc/$(am__dirstamp) \
+	../bin/lsp2lpc/$(DEPDIR)/$(am__dirstamp)
+../bin/lsp2sp/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/lsp2sp
+	@: > ../bin/lsp2sp/$(am__dirstamp)
+../bin/lsp2sp/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/lsp2sp/$(DEPDIR)
+	@: > ../bin/lsp2sp/$(DEPDIR)/$(am__dirstamp)
+../bin/lsp2sp/_lsp2sp.$(OBJEXT): ../bin/lsp2sp/$(am__dirstamp) \
+	../bin/lsp2sp/$(DEPDIR)/$(am__dirstamp)
+../bin/lspcheck/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/lspcheck
+	@: > ../bin/lspcheck/$(am__dirstamp)
+../bin/lspcheck/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/lspcheck/$(DEPDIR)
+	@: > ../bin/lspcheck/$(DEPDIR)/$(am__dirstamp)
+../bin/lspcheck/_lspcheck.$(OBJEXT): ../bin/lspcheck/$(am__dirstamp) \
+	../bin/lspcheck/$(DEPDIR)/$(am__dirstamp)
+../bin/lspdf/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/lspdf
+	@: > ../bin/lspdf/$(am__dirstamp)
+../bin/lspdf/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/lspdf/$(DEPDIR)
+	@: > ../bin/lspdf/$(DEPDIR)/$(am__dirstamp)
+../bin/lspdf/_lspdf.$(OBJEXT): ../bin/lspdf/$(am__dirstamp) \
+	../bin/lspdf/$(DEPDIR)/$(am__dirstamp)
+../bin/ltcdf/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/ltcdf
+	@: > ../bin/ltcdf/$(am__dirstamp)
+../bin/ltcdf/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/ltcdf/$(DEPDIR)
+	@: > ../bin/ltcdf/$(DEPDIR)/$(am__dirstamp)
+../bin/ltcdf/_ltcdf.$(OBJEXT): ../bin/ltcdf/$(am__dirstamp) \
+	../bin/ltcdf/$(DEPDIR)/$(am__dirstamp)
+../bin/mc2b/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/mc2b
+	@: > ../bin/mc2b/$(am__dirstamp)
+../bin/mc2b/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/mc2b/$(DEPDIR)
+	@: > ../bin/mc2b/$(DEPDIR)/$(am__dirstamp)
+../bin/mc2b/_mc2b.$(OBJEXT): ../bin/mc2b/$(am__dirstamp) \
+	../bin/mc2b/$(DEPDIR)/$(am__dirstamp)
+../bin/mcep/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/mcep
+	@: > ../bin/mcep/$(am__dirstamp)
+../bin/mcep/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/mcep/$(DEPDIR)
+	@: > ../bin/mcep/$(DEPDIR)/$(am__dirstamp)
+../bin/mcep/_mcep.$(OBJEXT): ../bin/mcep/$(am__dirstamp) \
+	../bin/mcep/$(DEPDIR)/$(am__dirstamp)
+../bin/mfcc/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/mfcc
+	@: > ../bin/mfcc/$(am__dirstamp)
+../bin/mfcc/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/mfcc/$(DEPDIR)
+	@: > ../bin/mfcc/$(DEPDIR)/$(am__dirstamp)
+../bin/mfcc/_mfcc.$(OBJEXT): ../bin/mfcc/$(am__dirstamp) \
+	../bin/mfcc/$(DEPDIR)/$(am__dirstamp)
+../bin/mgc2mgc/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/mgc2mgc
+	@: > ../bin/mgc2mgc/$(am__dirstamp)
+../bin/mgc2mgc/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/mgc2mgc/$(DEPDIR)
+	@: > ../bin/mgc2mgc/$(DEPDIR)/$(am__dirstamp)
+../bin/mgc2mgc/_mgc2mgc.$(OBJEXT): ../bin/mgc2mgc/$(am__dirstamp) \
+	../bin/mgc2mgc/$(DEPDIR)/$(am__dirstamp)
+../bin/mgc2sp/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/mgc2sp
+	@: > ../bin/mgc2sp/$(am__dirstamp)
+../bin/mgc2sp/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/mgc2sp/$(DEPDIR)
+	@: > ../bin/mgc2sp/$(DEPDIR)/$(am__dirstamp)
+../bin/mgc2sp/_mgc2sp.$(OBJEXT): ../bin/mgc2sp/$(am__dirstamp) \
+	../bin/mgc2sp/$(DEPDIR)/$(am__dirstamp)
+../bin/mgcep/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/mgcep
+	@: > ../bin/mgcep/$(am__dirstamp)
+../bin/mgcep/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/mgcep/$(DEPDIR)
+	@: > ../bin/mgcep/$(DEPDIR)/$(am__dirstamp)
+../bin/mgcep/_mgcep.$(OBJEXT): ../bin/mgcep/$(am__dirstamp) \
+	../bin/mgcep/$(DEPDIR)/$(am__dirstamp)
+../bin/mglsadf/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/mglsadf
+	@: > ../bin/mglsadf/$(am__dirstamp)
+../bin/mglsadf/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/mglsadf/$(DEPDIR)
+	@: > ../bin/mglsadf/$(DEPDIR)/$(am__dirstamp)
+../bin/mglsadf/_mglsadf.$(OBJEXT): ../bin/mglsadf/$(am__dirstamp) \
+	../bin/mglsadf/$(DEPDIR)/$(am__dirstamp)
+../bin/mlpg/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/mlpg
+	@: > ../bin/mlpg/$(am__dirstamp)
+../bin/mlpg/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/mlpg/$(DEPDIR)
+	@: > ../bin/mlpg/$(DEPDIR)/$(am__dirstamp)
+../bin/mlpg/_mlpg.$(OBJEXT): ../bin/mlpg/$(am__dirstamp) \
+	../bin/mlpg/$(DEPDIR)/$(am__dirstamp)
+../bin/mlsadf/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/mlsadf
+	@: > ../bin/mlsadf/$(am__dirstamp)
+../bin/mlsadf/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/mlsadf/$(DEPDIR)
+	@: > ../bin/mlsadf/$(DEPDIR)/$(am__dirstamp)
+../bin/mlsadf/_mlsadf.$(OBJEXT): ../bin/mlsadf/$(am__dirstamp) \
+	../bin/mlsadf/$(DEPDIR)/$(am__dirstamp)
+../bin/msvq/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/msvq
+	@: > ../bin/msvq/$(am__dirstamp)
+../bin/msvq/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/msvq/$(DEPDIR)
+	@: > ../bin/msvq/$(DEPDIR)/$(am__dirstamp)
+../bin/msvq/_msvq.$(OBJEXT): ../bin/msvq/$(am__dirstamp) \
+	../bin/msvq/$(DEPDIR)/$(am__dirstamp)
+../bin/norm0/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/norm0
+	@: > ../bin/norm0/$(am__dirstamp)
+../bin/norm0/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/norm0/$(DEPDIR)
+	@: > ../bin/norm0/$(DEPDIR)/$(am__dirstamp)
+../bin/norm0/_norm0.$(OBJEXT): ../bin/norm0/$(am__dirstamp) \
+	../bin/norm0/$(DEPDIR)/$(am__dirstamp)
+../bin/nrand/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/nrand
+	@: > ../bin/nrand/$(am__dirstamp)
+../bin/nrand/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/nrand/$(DEPDIR)
+	@: > ../bin/nrand/$(DEPDIR)/$(am__dirstamp)
+../bin/nrand/_nrand.$(OBJEXT): ../bin/nrand/$(am__dirstamp) \
+	../bin/nrand/$(DEPDIR)/$(am__dirstamp)
+../bin/par2lpc/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/par2lpc
+	@: > ../bin/par2lpc/$(am__dirstamp)
+../bin/par2lpc/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/par2lpc/$(DEPDIR)
+	@: > ../bin/par2lpc/$(DEPDIR)/$(am__dirstamp)
+../bin/par2lpc/_par2lpc.$(OBJEXT): ../bin/par2lpc/$(am__dirstamp) \
+	../bin/par2lpc/$(DEPDIR)/$(am__dirstamp)
+../bin/phase/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/phase
+	@: > ../bin/phase/$(am__dirstamp)
+../bin/phase/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/phase/$(DEPDIR)
+	@: > ../bin/phase/$(DEPDIR)/$(am__dirstamp)
+../bin/phase/_phase.$(OBJEXT): ../bin/phase/$(am__dirstamp) \
+	../bin/phase/$(DEPDIR)/$(am__dirstamp)
+../bin/poledf/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/poledf
+	@: > ../bin/poledf/$(am__dirstamp)
+../bin/poledf/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/poledf/$(DEPDIR)
+	@: > ../bin/poledf/$(DEPDIR)/$(am__dirstamp)
+../bin/poledf/_poledf.$(OBJEXT): ../bin/poledf/$(am__dirstamp) \
+	../bin/poledf/$(DEPDIR)/$(am__dirstamp)
+../bin/reverse/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/reverse
+	@: > ../bin/reverse/$(am__dirstamp)
+../bin/reverse/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/reverse/$(DEPDIR)
+	@: > ../bin/reverse/$(DEPDIR)/$(am__dirstamp)
+../bin/reverse/_reverse.$(OBJEXT): ../bin/reverse/$(am__dirstamp) \
+	../bin/reverse/$(DEPDIR)/$(am__dirstamp)
+../bin/rmse/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/rmse
+	@: > ../bin/rmse/$(am__dirstamp)
+../bin/rmse/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/rmse/$(DEPDIR)
+	@: > ../bin/rmse/$(DEPDIR)/$(am__dirstamp)
+../bin/rmse/_rmse.$(OBJEXT): ../bin/rmse/$(am__dirstamp) \
+	../bin/rmse/$(DEPDIR)/$(am__dirstamp)
+../bin/root_pol/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/root_pol
+	@: > ../bin/root_pol/$(am__dirstamp)
+../bin/root_pol/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/root_pol/$(DEPDIR)
+	@: > ../bin/root_pol/$(DEPDIR)/$(am__dirstamp)
+../bin/root_pol/_root_pol.$(OBJEXT): ../bin/root_pol/$(am__dirstamp) \
+	../bin/root_pol/$(DEPDIR)/$(am__dirstamp)
+../bin/smcep/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/smcep
+	@: > ../bin/smcep/$(am__dirstamp)
+../bin/smcep/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/smcep/$(DEPDIR)
+	@: > ../bin/smcep/$(DEPDIR)/$(am__dirstamp)
+../bin/smcep/_smcep.$(OBJEXT): ../bin/smcep/$(am__dirstamp) \
+	../bin/smcep/$(DEPDIR)/$(am__dirstamp)
+../bin/transpose/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/transpose
+	@: > ../bin/transpose/$(am__dirstamp)
+../bin/transpose/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/transpose/$(DEPDIR)
+	@: > ../bin/transpose/$(DEPDIR)/$(am__dirstamp)
+../bin/transpose/_transpose.$(OBJEXT):  \
+	../bin/transpose/$(am__dirstamp) \
+	../bin/transpose/$(DEPDIR)/$(am__dirstamp)
+../bin/uels/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/uels
+	@: > ../bin/uels/$(am__dirstamp)
+../bin/uels/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/uels/$(DEPDIR)
+	@: > ../bin/uels/$(DEPDIR)/$(am__dirstamp)
+../bin/uels/_uels.$(OBJEXT): ../bin/uels/$(am__dirstamp) \
+	../bin/uels/$(DEPDIR)/$(am__dirstamp)
+../bin/ulaw/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/ulaw
+	@: > ../bin/ulaw/$(am__dirstamp)
+../bin/ulaw/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/ulaw/$(DEPDIR)
+	@: > ../bin/ulaw/$(DEPDIR)/$(am__dirstamp)
+../bin/ulaw/_ulaw.$(OBJEXT): ../bin/ulaw/$(am__dirstamp) \
+	../bin/ulaw/$(DEPDIR)/$(am__dirstamp)
+../bin/vc/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/vc
+	@: > ../bin/vc/$(am__dirstamp)
+../bin/vc/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/vc/$(DEPDIR)
+	@: > ../bin/vc/$(DEPDIR)/$(am__dirstamp)
+../bin/vc/_vc.$(OBJEXT): ../bin/vc/$(am__dirstamp) \
+	../bin/vc/$(DEPDIR)/$(am__dirstamp)
+../bin/vq/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/vq
+	@: > ../bin/vq/$(am__dirstamp)
+../bin/vq/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/vq/$(DEPDIR)
+	@: > ../bin/vq/$(DEPDIR)/$(am__dirstamp)
+../bin/vq/_vq.$(OBJEXT): ../bin/vq/$(am__dirstamp) \
+	../bin/vq/$(DEPDIR)/$(am__dirstamp)
+../bin/wavjoin/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/wavjoin
+	@: > ../bin/wavjoin/$(am__dirstamp)
+../bin/wavjoin/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/wavjoin/$(DEPDIR)
+	@: > ../bin/wavjoin/$(DEPDIR)/$(am__dirstamp)
+../bin/wavjoin/_wavjoin.$(OBJEXT): ../bin/wavjoin/$(am__dirstamp) \
+	../bin/wavjoin/$(DEPDIR)/$(am__dirstamp)
+../bin/wavsplit/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/wavsplit
+	@: > ../bin/wavsplit/$(am__dirstamp)
+../bin/wavsplit/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/wavsplit/$(DEPDIR)
+	@: > ../bin/wavsplit/$(DEPDIR)/$(am__dirstamp)
+../bin/wavsplit/_wavsplit.$(OBJEXT): ../bin/wavsplit/$(am__dirstamp) \
+	../bin/wavsplit/$(DEPDIR)/$(am__dirstamp)
+../bin/window/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/window
+	@: > ../bin/window/$(am__dirstamp)
+../bin/window/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/window/$(DEPDIR)
+	@: > ../bin/window/$(DEPDIR)/$(am__dirstamp)
+../bin/window/_window.$(OBJEXT): ../bin/window/$(am__dirstamp) \
+	../bin/window/$(DEPDIR)/$(am__dirstamp)
+../bin/zcross/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/zcross
+	@: > ../bin/zcross/$(am__dirstamp)
+../bin/zcross/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/zcross/$(DEPDIR)
+	@: > ../bin/zcross/$(DEPDIR)/$(am__dirstamp)
+../bin/zcross/_zcross.$(OBJEXT): ../bin/zcross/$(am__dirstamp) \
+	../bin/zcross/$(DEPDIR)/$(am__dirstamp)
+../bin/zerodf/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/zerodf
+	@: > ../bin/zerodf/$(am__dirstamp)
+../bin/zerodf/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../bin/zerodf/$(DEPDIR)
+	@: > ../bin/zerodf/$(DEPDIR)/$(am__dirstamp)
+../bin/zerodf/_zerodf.$(OBJEXT): ../bin/zerodf/$(am__dirstamp) \
+	../bin/zerodf/$(DEPDIR)/$(am__dirstamp)
 
 libSPTK.a: $(libSPTK_a_OBJECTS) $(libSPTK_a_DEPENDENCIES) $(EXTRA_libSPTK_a_DEPENDENCIES) 
 	$(AM_V_at)-rm -f libSPTK.a
@@ -1203,83 +1105,156 @@ libSPTK.a: $(libSPTK_a_OBJECTS) $(libSPTK_a_DEPENDENCIES) $(EXTRA_libSPTK_a_DEPE
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/acep/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/acorr/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/agcep/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/amcep/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/average/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/b2mc/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/c2acr/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/c2ir/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/c2sp/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/clip/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/dct/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/df2/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/dfs/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/fft/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/fft2/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/fftcep/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/fftr/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/fftr2/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/freqt/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/gc2gc/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/gcep/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/glsadf/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/gmm/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/gnorm/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/grpdelay/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/histogram/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/ifft/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/ifft2/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/ifftr/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/ignorm/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/imsvq/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/ivq/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/lbg/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/levdur/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/lmadf/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/lpc/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/lpc2c/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/lpc2lsp/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/lpc2par/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/lsp2lpc/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/lsp2sp/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/lspcheck/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/lspdf/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/ltcdf/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/mc2b/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/mcep/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/mfcc/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/mgc2mgc/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/mgc2sp/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/mgcep/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/mglsadf/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/mlpg/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/mlsadf/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/msvq/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/norm0/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/nrand/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/par2lpc/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/phase/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/poledf/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/reverse/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/rmse/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/root_pol/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/smcep/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/transpose/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/uels/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/ulaw/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/vc/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/vq/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/wavjoin/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/wavsplit/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/window/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/zcross/*.$(OBJEXT)
-	-rm -f @top_srcdir@/bin/zerodf/*.$(OBJEXT)
+	-rm -f ../bin/acep/*.$(OBJEXT)
+	-rm -f ../bin/acorr/*.$(OBJEXT)
+	-rm -f ../bin/agcep/*.$(OBJEXT)
+	-rm -f ../bin/amcep/*.$(OBJEXT)
+	-rm -f ../bin/average/*.$(OBJEXT)
+	-rm -f ../bin/b2mc/*.$(OBJEXT)
+	-rm -f ../bin/c2acr/*.$(OBJEXT)
+	-rm -f ../bin/c2ir/*.$(OBJEXT)
+	-rm -f ../bin/c2sp/*.$(OBJEXT)
+	-rm -f ../bin/clip/*.$(OBJEXT)
+	-rm -f ../bin/dct/*.$(OBJEXT)
+	-rm -f ../bin/df2/*.$(OBJEXT)
+	-rm -f ../bin/dfs/*.$(OBJEXT)
+	-rm -f ../bin/fft/*.$(OBJEXT)
+	-rm -f ../bin/fft2/*.$(OBJEXT)
+	-rm -f ../bin/fftcep/*.$(OBJEXT)
+	-rm -f ../bin/fftr/*.$(OBJEXT)
+	-rm -f ../bin/fftr2/*.$(OBJEXT)
+	-rm -f ../bin/freqt/*.$(OBJEXT)
+	-rm -f ../bin/gc2gc/*.$(OBJEXT)
+	-rm -f ../bin/gcep/*.$(OBJEXT)
+	-rm -f ../bin/glsadf/*.$(OBJEXT)
+	-rm -f ../bin/gmm/*.$(OBJEXT)
+	-rm -f ../bin/gnorm/*.$(OBJEXT)
+	-rm -f ../bin/grpdelay/*.$(OBJEXT)
+	-rm -f ../bin/histogram/*.$(OBJEXT)
+	-rm -f ../bin/ifft/*.$(OBJEXT)
+	-rm -f ../bin/ifft2/*.$(OBJEXT)
+	-rm -f ../bin/ifftr/*.$(OBJEXT)
+	-rm -f ../bin/ignorm/*.$(OBJEXT)
+	-rm -f ../bin/imsvq/*.$(OBJEXT)
+	-rm -f ../bin/ivq/*.$(OBJEXT)
+	-rm -f ../bin/lbg/*.$(OBJEXT)
+	-rm -f ../bin/levdur/*.$(OBJEXT)
+	-rm -f ../bin/lmadf/*.$(OBJEXT)
+	-rm -f ../bin/lpc/*.$(OBJEXT)
+	-rm -f ../bin/lpc2c/*.$(OBJEXT)
+	-rm -f ../bin/lpc2lsp/*.$(OBJEXT)
+	-rm -f ../bin/lpc2par/*.$(OBJEXT)
+	-rm -f ../bin/lsp2lpc/*.$(OBJEXT)
+	-rm -f ../bin/lsp2sp/*.$(OBJEXT)
+	-rm -f ../bin/lspcheck/*.$(OBJEXT)
+	-rm -f ../bin/lspdf/*.$(OBJEXT)
+	-rm -f ../bin/ltcdf/*.$(OBJEXT)
+	-rm -f ../bin/mc2b/*.$(OBJEXT)
+	-rm -f ../bin/mcep/*.$(OBJEXT)
+	-rm -f ../bin/mfcc/*.$(OBJEXT)
+	-rm -f ../bin/mgc2mgc/*.$(OBJEXT)
+	-rm -f ../bin/mgc2sp/*.$(OBJEXT)
+	-rm -f ../bin/mgcep/*.$(OBJEXT)
+	-rm -f ../bin/mglsadf/*.$(OBJEXT)
+	-rm -f ../bin/mlpg/*.$(OBJEXT)
+	-rm -f ../bin/mlsadf/*.$(OBJEXT)
+	-rm -f ../bin/msvq/*.$(OBJEXT)
+	-rm -f ../bin/norm0/*.$(OBJEXT)
+	-rm -f ../bin/nrand/*.$(OBJEXT)
+	-rm -f ../bin/par2lpc/*.$(OBJEXT)
+	-rm -f ../bin/phase/*.$(OBJEXT)
+	-rm -f ../bin/poledf/*.$(OBJEXT)
+	-rm -f ../bin/reverse/*.$(OBJEXT)
+	-rm -f ../bin/rmse/*.$(OBJEXT)
+	-rm -f ../bin/root_pol/*.$(OBJEXT)
+	-rm -f ../bin/smcep/*.$(OBJEXT)
+	-rm -f ../bin/transpose/*.$(OBJEXT)
+	-rm -f ../bin/uels/*.$(OBJEXT)
+	-rm -f ../bin/ulaw/*.$(OBJEXT)
+	-rm -f ../bin/vc/*.$(OBJEXT)
+	-rm -f ../bin/vq/*.$(OBJEXT)
+	-rm -f ../bin/wavjoin/*.$(OBJEXT)
+	-rm -f ../bin/wavsplit/*.$(OBJEXT)
+	-rm -f ../bin/window/*.$(OBJEXT)
+	-rm -f ../bin/zcross/*.$(OBJEXT)
+	-rm -f ../bin/zerodf/*.$(OBJEXT)
 
 distclean-compile:
 	-rm -f *.tab.c
 
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/acep/$(DEPDIR)/_acep.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/acorr/$(DEPDIR)/_acorr.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/agcep/$(DEPDIR)/_agcep.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/amcep/$(DEPDIR)/_amcep.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/average/$(DEPDIR)/_average.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/b2mc/$(DEPDIR)/_b2mc.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/c2acr/$(DEPDIR)/_c2acr.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/c2ir/$(DEPDIR)/_c2ir.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/c2sp/$(DEPDIR)/_c2sp.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/clip/$(DEPDIR)/_clip.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/dct/$(DEPDIR)/_dct.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/df2/$(DEPDIR)/_df2.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/dfs/$(DEPDIR)/_dfs.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/fft/$(DEPDIR)/_fft.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/fft2/$(DEPDIR)/_fft2.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/fftcep/$(DEPDIR)/_fftcep.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/fftr/$(DEPDIR)/_fftr.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/fftr2/$(DEPDIR)/_fftr2.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/freqt/$(DEPDIR)/_freqt.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/gc2gc/$(DEPDIR)/_gc2gc.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/gcep/$(DEPDIR)/_gcep.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/glsadf/$(DEPDIR)/_glsadf.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/gmm/$(DEPDIR)/_gmm.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/gnorm/$(DEPDIR)/_gnorm.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/grpdelay/$(DEPDIR)/_grpdelay.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/histogram/$(DEPDIR)/_histogram.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/ifft/$(DEPDIR)/_ifft.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/ifft2/$(DEPDIR)/_ifft2.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/ifftr/$(DEPDIR)/_ifftr.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/ignorm/$(DEPDIR)/_ignorm.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/imsvq/$(DEPDIR)/_imsvq.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/ivq/$(DEPDIR)/_ivq.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/lbg/$(DEPDIR)/_lbg.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/levdur/$(DEPDIR)/_levdur.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/lmadf/$(DEPDIR)/_lmadf.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/lpc/$(DEPDIR)/_lpc.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/lpc2c/$(DEPDIR)/_lpc2c.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/lpc2lsp/$(DEPDIR)/_lpc2lsp.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/lpc2par/$(DEPDIR)/_lpc2par.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/lsp2lpc/$(DEPDIR)/_lsp2lpc.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/lsp2sp/$(DEPDIR)/_lsp2sp.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/lspcheck/$(DEPDIR)/_lspcheck.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/lspdf/$(DEPDIR)/_lspdf.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/ltcdf/$(DEPDIR)/_ltcdf.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/mc2b/$(DEPDIR)/_mc2b.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/mcep/$(DEPDIR)/_mcep.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/mfcc/$(DEPDIR)/_mfcc.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/mgc2mgc/$(DEPDIR)/_mgc2mgc.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/mgc2sp/$(DEPDIR)/_mgc2sp.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/mgcep/$(DEPDIR)/_mgcep.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/mglsadf/$(DEPDIR)/_mglsadf.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/mlpg/$(DEPDIR)/_mlpg.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/mlsadf/$(DEPDIR)/_mlsadf.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/msvq/$(DEPDIR)/_msvq.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/norm0/$(DEPDIR)/_norm0.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/nrand/$(DEPDIR)/_nrand.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/par2lpc/$(DEPDIR)/_par2lpc.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/phase/$(DEPDIR)/_phase.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/poledf/$(DEPDIR)/_poledf.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/reverse/$(DEPDIR)/_reverse.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/rmse/$(DEPDIR)/_rmse.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/root_pol/$(DEPDIR)/_root_pol.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/smcep/$(DEPDIR)/_smcep.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/transpose/$(DEPDIR)/_transpose.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/uels/$(DEPDIR)/_uels.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/ulaw/$(DEPDIR)/_ulaw.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/vc/$(DEPDIR)/_vc.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/vq/$(DEPDIR)/_vq.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/wavjoin/$(DEPDIR)/_wavjoin.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/wavsplit/$(DEPDIR)/_wavsplit.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/window/$(DEPDIR)/_window.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/zcross/$(DEPDIR)/_zcross.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../bin/zerodf/$(DEPDIR)/_zerodf.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/agexp.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/cholesky.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/fileio.Po@am__quote@
@@ -1294,79 +1269,6 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/mseq.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/theq.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/toeplitz.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/acep/$(DEPDIR)/_acep.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/acorr/$(DEPDIR)/_acorr.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/agcep/$(DEPDIR)/_agcep.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/amcep/$(DEPDIR)/_amcep.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/average/$(DEPDIR)/_average.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/b2mc/$(DEPDIR)/_b2mc.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/c2acr/$(DEPDIR)/_c2acr.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/c2ir/$(DEPDIR)/_c2ir.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/c2sp/$(DEPDIR)/_c2sp.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/clip/$(DEPDIR)/_clip.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/dct/$(DEPDIR)/_dct.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/df2/$(DEPDIR)/_df2.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/dfs/$(DEPDIR)/_dfs.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/fft/$(DEPDIR)/_fft.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/fft2/$(DEPDIR)/_fft2.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/fftcep/$(DEPDIR)/_fftcep.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/fftr/$(DEPDIR)/_fftr.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/fftr2/$(DEPDIR)/_fftr2.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/freqt/$(DEPDIR)/_freqt.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/gc2gc/$(DEPDIR)/_gc2gc.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/gcep/$(DEPDIR)/_gcep.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/glsadf/$(DEPDIR)/_glsadf.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/gmm/$(DEPDIR)/_gmm.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/gnorm/$(DEPDIR)/_gnorm.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/grpdelay/$(DEPDIR)/_grpdelay.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/histogram/$(DEPDIR)/_histogram.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/ifft/$(DEPDIR)/_ifft.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/ifft2/$(DEPDIR)/_ifft2.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/ifftr/$(DEPDIR)/_ifftr.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/ignorm/$(DEPDIR)/_ignorm.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/imsvq/$(DEPDIR)/_imsvq.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/ivq/$(DEPDIR)/_ivq.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/lbg/$(DEPDIR)/_lbg.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/levdur/$(DEPDIR)/_levdur.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/lmadf/$(DEPDIR)/_lmadf.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/lpc/$(DEPDIR)/_lpc.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/lpc2c/$(DEPDIR)/_lpc2c.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/lpc2lsp/$(DEPDIR)/_lpc2lsp.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/lpc2par/$(DEPDIR)/_lpc2par.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/lsp2lpc/$(DEPDIR)/_lsp2lpc.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/lsp2sp/$(DEPDIR)/_lsp2sp.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/lspcheck/$(DEPDIR)/_lspcheck.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/lspdf/$(DEPDIR)/_lspdf.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/ltcdf/$(DEPDIR)/_ltcdf.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/mc2b/$(DEPDIR)/_mc2b.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/mcep/$(DEPDIR)/_mcep.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/mfcc/$(DEPDIR)/_mfcc.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/mgc2mgc/$(DEPDIR)/_mgc2mgc.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/mgc2sp/$(DEPDIR)/_mgc2sp.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/mgcep/$(DEPDIR)/_mgcep.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/mglsadf/$(DEPDIR)/_mglsadf.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/mlpg/$(DEPDIR)/_mlpg.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/mlsadf/$(DEPDIR)/_mlsadf.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/msvq/$(DEPDIR)/_msvq.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/norm0/$(DEPDIR)/_norm0.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/nrand/$(DEPDIR)/_nrand.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/par2lpc/$(DEPDIR)/_par2lpc.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/phase/$(DEPDIR)/_phase.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/poledf/$(DEPDIR)/_poledf.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/reverse/$(DEPDIR)/_reverse.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/rmse/$(DEPDIR)/_rmse.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/root_pol/$(DEPDIR)/_root_pol.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/smcep/$(DEPDIR)/_smcep.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/transpose/$(DEPDIR)/_transpose.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/uels/$(DEPDIR)/_uels.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/ulaw/$(DEPDIR)/_ulaw.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/vc/$(DEPDIR)/_vc.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/vq/$(DEPDIR)/_vq.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/wavjoin/$(DEPDIR)/_wavjoin.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/wavsplit/$(DEPDIR)/_wavsplit.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/window/$(DEPDIR)/_window.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/zcross/$(DEPDIR)/_zcross.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@@top_srcdir@/bin/zerodf/$(DEPDIR)/_zerodf.Po@am__quote@
 
 .c.o:
 @am__fastdepCC_TRUE@	$(AM_V_CC)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.o$$||'`;\
@@ -1499,152 +1401,152 @@ clean-generic:
 distclean-generic:
 	-test -z "$(CONFIG_CLEAN_FILES)" || rm -f $(CONFIG_CLEAN_FILES)
 	-test . = "$(srcdir)" || test -z "$(CONFIG_CLEAN_VPATH_FILES)" || rm -f $(CONFIG_CLEAN_VPATH_FILES)
-	-rm -f @top_srcdir@/bin/acep/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/acep/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/acorr/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/acorr/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/agcep/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/agcep/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/amcep/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/amcep/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/average/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/average/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/b2mc/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/b2mc/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/c2acr/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/c2acr/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/c2ir/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/c2ir/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/c2sp/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/c2sp/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/clip/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/clip/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/dct/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/dct/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/df2/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/df2/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/dfs/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/dfs/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/fft/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/fft/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/fft2/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/fft2/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/fftcep/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/fftcep/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/fftr/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/fftr/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/fftr2/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/fftr2/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/freqt/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/freqt/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/gc2gc/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/gc2gc/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/gcep/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/gcep/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/glsadf/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/glsadf/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/gmm/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/gmm/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/gnorm/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/gnorm/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/grpdelay/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/grpdelay/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/histogram/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/histogram/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/ifft/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/ifft/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/ifft2/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/ifft2/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/ifftr/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/ifftr/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/ignorm/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/ignorm/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/imsvq/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/imsvq/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/ivq/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/ivq/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/lbg/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/lbg/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/levdur/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/levdur/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/lmadf/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/lmadf/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/lpc/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/lpc/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/lpc2c/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/lpc2c/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/lpc2lsp/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/lpc2lsp/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/lpc2par/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/lpc2par/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/lsp2lpc/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/lsp2lpc/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/lsp2sp/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/lsp2sp/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/lspcheck/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/lspcheck/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/lspdf/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/lspdf/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/ltcdf/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/ltcdf/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/mc2b/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/mc2b/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/mcep/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/mcep/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/mfcc/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/mfcc/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/mgc2mgc/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/mgc2mgc/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/mgc2sp/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/mgc2sp/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/mgcep/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/mgcep/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/mglsadf/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/mglsadf/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/mlpg/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/mlpg/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/mlsadf/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/mlsadf/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/msvq/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/msvq/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/norm0/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/norm0/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/nrand/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/nrand/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/par2lpc/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/par2lpc/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/phase/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/phase/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/poledf/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/poledf/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/reverse/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/reverse/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/rmse/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/rmse/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/root_pol/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/root_pol/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/smcep/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/smcep/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/transpose/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/transpose/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/uels/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/uels/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/ulaw/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/ulaw/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/vc/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/vc/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/vq/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/vq/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/wavjoin/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/wavjoin/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/wavsplit/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/wavsplit/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/window/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/window/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/zcross/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/zcross/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/zerodf/$(DEPDIR)/$(am__dirstamp)
-	-rm -f @top_srcdir@/bin/zerodf/$(am__dirstamp)
+	-rm -f ../bin/acep/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/acep/$(am__dirstamp)
+	-rm -f ../bin/acorr/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/acorr/$(am__dirstamp)
+	-rm -f ../bin/agcep/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/agcep/$(am__dirstamp)
+	-rm -f ../bin/amcep/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/amcep/$(am__dirstamp)
+	-rm -f ../bin/average/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/average/$(am__dirstamp)
+	-rm -f ../bin/b2mc/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/b2mc/$(am__dirstamp)
+	-rm -f ../bin/c2acr/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/c2acr/$(am__dirstamp)
+	-rm -f ../bin/c2ir/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/c2ir/$(am__dirstamp)
+	-rm -f ../bin/c2sp/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/c2sp/$(am__dirstamp)
+	-rm -f ../bin/clip/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/clip/$(am__dirstamp)
+	-rm -f ../bin/dct/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/dct/$(am__dirstamp)
+	-rm -f ../bin/df2/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/df2/$(am__dirstamp)
+	-rm -f ../bin/dfs/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/dfs/$(am__dirstamp)
+	-rm -f ../bin/fft/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/fft/$(am__dirstamp)
+	-rm -f ../bin/fft2/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/fft2/$(am__dirstamp)
+	-rm -f ../bin/fftcep/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/fftcep/$(am__dirstamp)
+	-rm -f ../bin/fftr/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/fftr/$(am__dirstamp)
+	-rm -f ../bin/fftr2/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/fftr2/$(am__dirstamp)
+	-rm -f ../bin/freqt/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/freqt/$(am__dirstamp)
+	-rm -f ../bin/gc2gc/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/gc2gc/$(am__dirstamp)
+	-rm -f ../bin/gcep/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/gcep/$(am__dirstamp)
+	-rm -f ../bin/glsadf/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/glsadf/$(am__dirstamp)
+	-rm -f ../bin/gmm/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/gmm/$(am__dirstamp)
+	-rm -f ../bin/gnorm/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/gnorm/$(am__dirstamp)
+	-rm -f ../bin/grpdelay/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/grpdelay/$(am__dirstamp)
+	-rm -f ../bin/histogram/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/histogram/$(am__dirstamp)
+	-rm -f ../bin/ifft/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/ifft/$(am__dirstamp)
+	-rm -f ../bin/ifft2/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/ifft2/$(am__dirstamp)
+	-rm -f ../bin/ifftr/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/ifftr/$(am__dirstamp)
+	-rm -f ../bin/ignorm/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/ignorm/$(am__dirstamp)
+	-rm -f ../bin/imsvq/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/imsvq/$(am__dirstamp)
+	-rm -f ../bin/ivq/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/ivq/$(am__dirstamp)
+	-rm -f ../bin/lbg/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/lbg/$(am__dirstamp)
+	-rm -f ../bin/levdur/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/levdur/$(am__dirstamp)
+	-rm -f ../bin/lmadf/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/lmadf/$(am__dirstamp)
+	-rm -f ../bin/lpc/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/lpc/$(am__dirstamp)
+	-rm -f ../bin/lpc2c/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/lpc2c/$(am__dirstamp)
+	-rm -f ../bin/lpc2lsp/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/lpc2lsp/$(am__dirstamp)
+	-rm -f ../bin/lpc2par/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/lpc2par/$(am__dirstamp)
+	-rm -f ../bin/lsp2lpc/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/lsp2lpc/$(am__dirstamp)
+	-rm -f ../bin/lsp2sp/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/lsp2sp/$(am__dirstamp)
+	-rm -f ../bin/lspcheck/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/lspcheck/$(am__dirstamp)
+	-rm -f ../bin/lspdf/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/lspdf/$(am__dirstamp)
+	-rm -f ../bin/ltcdf/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/ltcdf/$(am__dirstamp)
+	-rm -f ../bin/mc2b/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/mc2b/$(am__dirstamp)
+	-rm -f ../bin/mcep/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/mcep/$(am__dirstamp)
+	-rm -f ../bin/mfcc/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/mfcc/$(am__dirstamp)
+	-rm -f ../bin/mgc2mgc/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/mgc2mgc/$(am__dirstamp)
+	-rm -f ../bin/mgc2sp/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/mgc2sp/$(am__dirstamp)
+	-rm -f ../bin/mgcep/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/mgcep/$(am__dirstamp)
+	-rm -f ../bin/mglsadf/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/mglsadf/$(am__dirstamp)
+	-rm -f ../bin/mlpg/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/mlpg/$(am__dirstamp)
+	-rm -f ../bin/mlsadf/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/mlsadf/$(am__dirstamp)
+	-rm -f ../bin/msvq/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/msvq/$(am__dirstamp)
+	-rm -f ../bin/norm0/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/norm0/$(am__dirstamp)
+	-rm -f ../bin/nrand/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/nrand/$(am__dirstamp)
+	-rm -f ../bin/par2lpc/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/par2lpc/$(am__dirstamp)
+	-rm -f ../bin/phase/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/phase/$(am__dirstamp)
+	-rm -f ../bin/poledf/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/poledf/$(am__dirstamp)
+	-rm -f ../bin/reverse/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/reverse/$(am__dirstamp)
+	-rm -f ../bin/rmse/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/rmse/$(am__dirstamp)
+	-rm -f ../bin/root_pol/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/root_pol/$(am__dirstamp)
+	-rm -f ../bin/smcep/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/smcep/$(am__dirstamp)
+	-rm -f ../bin/transpose/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/transpose/$(am__dirstamp)
+	-rm -f ../bin/uels/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/uels/$(am__dirstamp)
+	-rm -f ../bin/ulaw/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/ulaw/$(am__dirstamp)
+	-rm -f ../bin/vc/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/vc/$(am__dirstamp)
+	-rm -f ../bin/vq/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/vq/$(am__dirstamp)
+	-rm -f ../bin/wavjoin/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/wavjoin/$(am__dirstamp)
+	-rm -f ../bin/wavsplit/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/wavsplit/$(am__dirstamp)
+	-rm -f ../bin/window/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/window/$(am__dirstamp)
+	-rm -f ../bin/zcross/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/zcross/$(am__dirstamp)
+	-rm -f ../bin/zerodf/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../bin/zerodf/$(am__dirstamp)
 
 maintainer-clean-generic:
 	@echo "This command is intended for maintainers to use"
@@ -1654,7 +1556,7 @@ clean: clean-am
 clean-am: clean-generic clean-libLIBRARIES mostlyclean-am
 
 distclean: distclean-am
-	-rm -rf ./$(DEPDIR) @top_srcdir@/bin/acep/$(DEPDIR) @top_srcdir@/bin/acorr/$(DEPDIR) @top_srcdir@/bin/agcep/$(DEPDIR) @top_srcdir@/bin/amcep/$(DEPDIR) @top_srcdir@/bin/average/$(DEPDIR) @top_srcdir@/bin/b2mc/$(DEPDIR) @top_srcdir@/bin/c2acr/$(DEPDIR) @top_srcdir@/bin/c2ir/$(DEPDIR) @top_srcdir@/bin/c2sp/$(DEPDIR) @top_srcdir@/bin/clip/$(DEPDIR) @top_srcdir@/bin/dct/$(DEPDIR) @top_srcdir@/bin/df2/$(DEPDIR) @top_srcdir@/bin/dfs/$(DEPDIR) @top_srcdir@/bin/fft/$(DEPDIR) @top_srcdir@/bin/fft2/$(DEPDIR) @top_srcdir@/bin/fftcep/$(DEPDIR) @top_srcdir@/bin/fftr/$(DEPDIR) @top_srcdir@/bin/fftr2/$(DEPDIR) @top_srcdir@/bin/freqt/$(DEPDIR) @top_srcdir@/bin/gc2gc/$(DEPDIR) @top_srcdir@/bin/gcep/$(DEPDIR) @top_srcdir@/bin/glsadf/$(DEPDIR) @top_srcdir@/bin/gmm/$(DEPDIR) @top_srcdir@/bin/gnorm/$(DEPDIR) @top_srcdir@/bin/grpdelay/$(DEPDIR) @top_srcdir@/bin/histogram/$(DEPDIR) @top_srcdir@/bin/ifft/$(DEPDIR) @top_srcdir@/bin/ifft2/$(DEPDIR) @top_srcdir@/bin/ifftr/$(DEPDIR) @top_srcdir@/bin/ignorm/$(DEPDIR) @top_srcdir@/bin/imsvq/$(DEPDIR) @top_srcdir@/bin/ivq/$(DEPDIR) @top_srcdir@/bin/lbg/$(DEPDIR) @top_srcdir@/bin/levdur/$(DEPDIR) @top_srcdir@/bin/lmadf/$(DEPDIR) @top_srcdir@/bin/lpc/$(DEPDIR) @top_srcdir@/bin/lpc2c/$(DEPDIR) @top_srcdir@/bin/lpc2lsp/$(DEPDIR) @top_srcdir@/bin/lpc2par/$(DEPDIR) @top_srcdir@/bin/lsp2lpc/$(DEPDIR) @top_srcdir@/bin/lsp2sp/$(DEPDIR) @top_srcdir@/bin/lspcheck/$(DEPDIR) @top_srcdir@/bin/lspdf/$(DEPDIR) @top_srcdir@/bin/ltcdf/$(DEPDIR) @top_srcdir@/bin/mc2b/$(DEPDIR) @top_srcdir@/bin/mcep/$(DEPDIR) @top_srcdir@/bin/mfcc/$(DEPDIR) @top_srcdir@/bin/mgc2mgc/$(DEPDIR) @top_srcdir@/bin/mgc2sp/$(DEPDIR) @top_srcdir@/bin/mgcep/$(DEPDIR) @top_srcdir@/bin/mglsadf/$(DEPDIR) @top_srcdir@/bin/mlpg/$(DEPDIR) @top_srcdir@/bin/mlsadf/$(DEPDIR) @top_srcdir@/bin/msvq/$(DEPDIR) @top_srcdir@/bin/norm0/$(DEPDIR) @top_srcdir@/bin/nrand/$(DEPDIR) @top_srcdir@/bin/par2lpc/$(DEPDIR) @top_srcdir@/bin/phase/$(DEPDIR) @top_srcdir@/bin/poledf/$(DEPDIR) @top_srcdir@/bin/reverse/$(DEPDIR) @top_srcdir@/bin/rmse/$(DEPDIR) @top_srcdir@/bin/root_pol/$(DEPDIR) @top_srcdir@/bin/smcep/$(DEPDIR) @top_srcdir@/bin/transpose/$(DEPDIR) @top_srcdir@/bin/uels/$(DEPDIR) @top_srcdir@/bin/ulaw/$(DEPDIR) @top_srcdir@/bin/vc/$(DEPDIR) @top_srcdir@/bin/vq/$(DEPDIR) @top_srcdir@/bin/wavjoin/$(DEPDIR) @top_srcdir@/bin/wavsplit/$(DEPDIR) @top_srcdir@/bin/window/$(DEPDIR) @top_srcdir@/bin/zcross/$(DEPDIR) @top_srcdir@/bin/zerodf/$(DEPDIR)
+	-rm -rf ../bin/acep/$(DEPDIR) ../bin/acorr/$(DEPDIR) ../bin/agcep/$(DEPDIR) ../bin/amcep/$(DEPDIR) ../bin/average/$(DEPDIR) ../bin/b2mc/$(DEPDIR) ../bin/c2acr/$(DEPDIR) ../bin/c2ir/$(DEPDIR) ../bin/c2sp/$(DEPDIR) ../bin/clip/$(DEPDIR) ../bin/dct/$(DEPDIR) ../bin/df2/$(DEPDIR) ../bin/dfs/$(DEPDIR) ../bin/fft/$(DEPDIR) ../bin/fft2/$(DEPDIR) ../bin/fftcep/$(DEPDIR) ../bin/fftr/$(DEPDIR) ../bin/fftr2/$(DEPDIR) ../bin/freqt/$(DEPDIR) ../bin/gc2gc/$(DEPDIR) ../bin/gcep/$(DEPDIR) ../bin/glsadf/$(DEPDIR) ../bin/gmm/$(DEPDIR) ../bin/gnorm/$(DEPDIR) ../bin/grpdelay/$(DEPDIR) ../bin/histogram/$(DEPDIR) ../bin/ifft/$(DEPDIR) ../bin/ifft2/$(DEPDIR) ../bin/ifftr/$(DEPDIR) ../bin/ignorm/$(DEPDIR) ../bin/imsvq/$(DEPDIR) ../bin/ivq/$(DEPDIR) ../bin/lbg/$(DEPDIR) ../bin/levdur/$(DEPDIR) ../bin/lmadf/$(DEPDIR) ../bin/lpc/$(DEPDIR) ../bin/lpc2c/$(DEPDIR) ../bin/lpc2lsp/$(DEPDIR) ../bin/lpc2par/$(DEPDIR) ../bin/lsp2lpc/$(DEPDIR) ../bin/lsp2sp/$(DEPDIR) ../bin/lspcheck/$(DEPDIR) ../bin/lspdf/$(DEPDIR) ../bin/ltcdf/$(DEPDIR) ../bin/mc2b/$(DEPDIR) ../bin/mcep/$(DEPDIR) ../bin/mfcc/$(DEPDIR) ../bin/mgc2mgc/$(DEPDIR) ../bin/mgc2sp/$(DEPDIR) ../bin/mgcep/$(DEPDIR) ../bin/mglsadf/$(DEPDIR) ../bin/mlpg/$(DEPDIR) ../bin/mlsadf/$(DEPDIR) ../bin/msvq/$(DEPDIR) ../bin/norm0/$(DEPDIR) ../bin/nrand/$(DEPDIR) ../bin/par2lpc/$(DEPDIR) ../bin/phase/$(DEPDIR) ../bin/poledf/$(DEPDIR) ../bin/reverse/$(DEPDIR) ../bin/rmse/$(DEPDIR) ../bin/root_pol/$(DEPDIR) ../bin/smcep/$(DEPDIR) ../bin/transpose/$(DEPDIR) ../bin/uels/$(DEPDIR) ../bin/ulaw/$(DEPDIR) ../bin/vc/$(DEPDIR) ../bin/vq/$(DEPDIR) ../bin/wavjoin/$(DEPDIR) ../bin/wavsplit/$(DEPDIR) ../bin/window/$(DEPDIR) ../bin/zcross/$(DEPDIR) ../bin/zerodf/$(DEPDIR) ./$(DEPDIR)
 	-rm -f Makefile
 distclean-am: clean-am distclean-compile distclean-generic \
 	distclean-tags
@@ -1700,7 +1602,7 @@ install-ps-am:
 installcheck-am:
 
 maintainer-clean: maintainer-clean-am
-	-rm -rf ./$(DEPDIR) @top_srcdir@/bin/acep/$(DEPDIR) @top_srcdir@/bin/acorr/$(DEPDIR) @top_srcdir@/bin/agcep/$(DEPDIR) @top_srcdir@/bin/amcep/$(DEPDIR) @top_srcdir@/bin/average/$(DEPDIR) @top_srcdir@/bin/b2mc/$(DEPDIR) @top_srcdir@/bin/c2acr/$(DEPDIR) @top_srcdir@/bin/c2ir/$(DEPDIR) @top_srcdir@/bin/c2sp/$(DEPDIR) @top_srcdir@/bin/clip/$(DEPDIR) @top_srcdir@/bin/dct/$(DEPDIR) @top_srcdir@/bin/df2/$(DEPDIR) @top_srcdir@/bin/dfs/$(DEPDIR) @top_srcdir@/bin/fft/$(DEPDIR) @top_srcdir@/bin/fft2/$(DEPDIR) @top_srcdir@/bin/fftcep/$(DEPDIR) @top_srcdir@/bin/fftr/$(DEPDIR) @top_srcdir@/bin/fftr2/$(DEPDIR) @top_srcdir@/bin/freqt/$(DEPDIR) @top_srcdir@/bin/gc2gc/$(DEPDIR) @top_srcdir@/bin/gcep/$(DEPDIR) @top_srcdir@/bin/glsadf/$(DEPDIR) @top_srcdir@/bin/gmm/$(DEPDIR) @top_srcdir@/bin/gnorm/$(DEPDIR) @top_srcdir@/bin/grpdelay/$(DEPDIR) @top_srcdir@/bin/histogram/$(DEPDIR) @top_srcdir@/bin/ifft/$(DEPDIR) @top_srcdir@/bin/ifft2/$(DEPDIR) @top_srcdir@/bin/ifftr/$(DEPDIR) @top_srcdir@/bin/ignorm/$(DEPDIR) @top_srcdir@/bin/imsvq/$(DEPDIR) @top_srcdir@/bin/ivq/$(DEPDIR) @top_srcdir@/bin/lbg/$(DEPDIR) @top_srcdir@/bin/levdur/$(DEPDIR) @top_srcdir@/bin/lmadf/$(DEPDIR) @top_srcdir@/bin/lpc/$(DEPDIR) @top_srcdir@/bin/lpc2c/$(DEPDIR) @top_srcdir@/bin/lpc2lsp/$(DEPDIR) @top_srcdir@/bin/lpc2par/$(DEPDIR) @top_srcdir@/bin/lsp2lpc/$(DEPDIR) @top_srcdir@/bin/lsp2sp/$(DEPDIR) @top_srcdir@/bin/lspcheck/$(DEPDIR) @top_srcdir@/bin/lspdf/$(DEPDIR) @top_srcdir@/bin/ltcdf/$(DEPDIR) @top_srcdir@/bin/mc2b/$(DEPDIR) @top_srcdir@/bin/mcep/$(DEPDIR) @top_srcdir@/bin/mfcc/$(DEPDIR) @top_srcdir@/bin/mgc2mgc/$(DEPDIR) @top_srcdir@/bin/mgc2sp/$(DEPDIR) @top_srcdir@/bin/mgcep/$(DEPDIR) @top_srcdir@/bin/mglsadf/$(DEPDIR) @top_srcdir@/bin/mlpg/$(DEPDIR) @top_srcdir@/bin/mlsadf/$(DEPDIR) @top_srcdir@/bin/msvq/$(DEPDIR) @top_srcdir@/bin/norm0/$(DEPDIR) @top_srcdir@/bin/nrand/$(DEPDIR) @top_srcdir@/bin/par2lpc/$(DEPDIR) @top_srcdir@/bin/phase/$(DEPDIR) @top_srcdir@/bin/poledf/$(DEPDIR) @top_srcdir@/bin/reverse/$(DEPDIR) @top_srcdir@/bin/rmse/$(DEPDIR) @top_srcdir@/bin/root_pol/$(DEPDIR) @top_srcdir@/bin/smcep/$(DEPDIR) @top_srcdir@/bin/transpose/$(DEPDIR) @top_srcdir@/bin/uels/$(DEPDIR) @top_srcdir@/bin/ulaw/$(DEPDIR) @top_srcdir@/bin/vc/$(DEPDIR) @top_srcdir@/bin/vq/$(DEPDIR) @top_srcdir@/bin/wavjoin/$(DEPDIR) @top_srcdir@/bin/wavsplit/$(DEPDIR) @top_srcdir@/bin/window/$(DEPDIR) @top_srcdir@/bin/zcross/$(DEPDIR) @top_srcdir@/bin/zerodf/$(DEPDIR)
+	-rm -rf ../bin/acep/$(DEPDIR) ../bin/acorr/$(DEPDIR) ../bin/agcep/$(DEPDIR) ../bin/amcep/$(DEPDIR) ../bin/average/$(DEPDIR) ../bin/b2mc/$(DEPDIR) ../bin/c2acr/$(DEPDIR) ../bin/c2ir/$(DEPDIR) ../bin/c2sp/$(DEPDIR) ../bin/clip/$(DEPDIR) ../bin/dct/$(DEPDIR) ../bin/df2/$(DEPDIR) ../bin/dfs/$(DEPDIR) ../bin/fft/$(DEPDIR) ../bin/fft2/$(DEPDIR) ../bin/fftcep/$(DEPDIR) ../bin/fftr/$(DEPDIR) ../bin/fftr2/$(DEPDIR) ../bin/freqt/$(DEPDIR) ../bin/gc2gc/$(DEPDIR) ../bin/gcep/$(DEPDIR) ../bin/glsadf/$(DEPDIR) ../bin/gmm/$(DEPDIR) ../bin/gnorm/$(DEPDIR) ../bin/grpdelay/$(DEPDIR) ../bin/histogram/$(DEPDIR) ../bin/ifft/$(DEPDIR) ../bin/ifft2/$(DEPDIR) ../bin/ifftr/$(DEPDIR) ../bin/ignorm/$(DEPDIR) ../bin/imsvq/$(DEPDIR) ../bin/ivq/$(DEPDIR) ../bin/lbg/$(DEPDIR) ../bin/levdur/$(DEPDIR) ../bin/lmadf/$(DEPDIR) ../bin/lpc/$(DEPDIR) ../bin/lpc2c/$(DEPDIR) ../bin/lpc2lsp/$(DEPDIR) ../bin/lpc2par/$(DEPDIR) ../bin/lsp2lpc/$(DEPDIR) ../bin/lsp2sp/$(DEPDIR) ../bin/lspcheck/$(DEPDIR) ../bin/lspdf/$(DEPDIR) ../bin/ltcdf/$(DEPDIR) ../bin/mc2b/$(DEPDIR) ../bin/mcep/$(DEPDIR) ../bin/mfcc/$(DEPDIR) ../bin/mgc2mgc/$(DEPDIR) ../bin/mgc2sp/$(DEPDIR) ../bin/mgcep/$(DEPDIR) ../bin/mglsadf/$(DEPDIR) ../bin/mlpg/$(DEPDIR) ../bin/mlsadf/$(DEPDIR) ../bin/msvq/$(DEPDIR) ../bin/norm0/$(DEPDIR) ../bin/nrand/$(DEPDIR) ../bin/par2lpc/$(DEPDIR) ../bin/phase/$(DEPDIR) ../bin/poledf/$(DEPDIR) ../bin/reverse/$(DEPDIR) ../bin/rmse/$(DEPDIR) ../bin/root_pol/$(DEPDIR) ../bin/smcep/$(DEPDIR) ../bin/transpose/$(DEPDIR) ../bin/uels/$(DEPDIR) ../bin/ulaw/$(DEPDIR) ../bin/vc/$(DEPDIR) ../bin/vq/$(DEPDIR) ../bin/wavjoin/$(DEPDIR) ../bin/wavsplit/$(DEPDIR) ../bin/window/$(DEPDIR) ../bin/zcross/$(DEPDIR) ../bin/zerodf/$(DEPDIR) ./$(DEPDIR)
 	-rm -f Makefile
 maintainer-clean-am: distclean-am maintainer-clean-generic
 

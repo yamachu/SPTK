@@ -697,12 +697,12 @@ uninstall-am: uninstall-binPROGRAMS uninstall-binSCRIPTS \
 .PRECIOUS: Makefile
 
 
-us16: us16.in
-	$(replace_path) < us16.in > $@
+us16: @srcdir@/us16.in
+	$(replace_path) < "$<" > $@
 	chmod +x $@
 
-uscd: uscd.in
-	$(replace_path) < uscd.in > $@
+uscd: @srcdir@/uscd.in
+	$(replace_path) < "$<" > $@
 	chmod +x $@
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.

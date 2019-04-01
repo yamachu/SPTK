@@ -1,5 +1,6 @@
 SUBDIRS = acep \
 	acorr \
+	acr2csm \
 	agcep \
 	amcep \
 	average \
@@ -13,6 +14,7 @@ SUBDIRS = acep \
 	cat2 \
 	cdist \
 	clip \
+	csm2acr \
 	da \
 	dct \
 	decimate \
@@ -92,6 +94,7 @@ SUBDIRS = acep \
 	ramp \
 	rawtowav \
 	reverse \
+	rlevdur \
 	rmse \
 	root_pol \
 	sin \
