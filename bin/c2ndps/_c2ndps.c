@@ -8,7 +8,7 @@
 /*                           Interdisciplinary Graduate School of    */
 /*                           Science and Engineering                 */
 /*                                                                   */
-/*                1996-2016  Nagoya Institute of Technology          */
+/*                1996-2017  Nagoya Institute of Technology          */
 /*                           Department of Computer Science          */
 /*                                                                   */
 /* All rights reserved.                                              */
@@ -43,7 +43,7 @@
 /* ----------------------------------------------------------------- */
 
 /***************************************************************
-    $Id: _c2ndps.c,v 1.3 2016/12/22 10:53:01 fjst15124 Exp $
+    $Id$
 
     Transform Cepstrum to Negative Derivative of Phase Spectrum (NDPS)
 
@@ -79,6 +79,8 @@ void c2ndps(double *c, const int m, double *n, const int l)
       n[i] = c[i] * i / 2.0;
       n[l - i] = n[i];
    }
+   if (m == l / 2)
+      n[m] = n[m] * 2.0;
 
    fftr(n, tmp, l);
 

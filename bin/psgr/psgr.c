@@ -8,7 +8,7 @@
 /*                           Interdisciplinary Graduate School of    */
 /*                           Science and Engineering                 */
 /*                                                                   */
-/*                1996-2016  Nagoya Institute of Technology          */
+/*                1996-2017  Nagoya Institute of Technology          */
 /*                           Department of Computer Science          */
 /*                                                                   */
 /* All rights reserved.                                              */
@@ -53,7 +53,7 @@
 *      Ver. 0.99  '93.8                                 *
 ********************************************************/
 
-static char *rcs_id = "$Id: psgr.c,v 1.27 2016/12/22 10:53:11 fjst15124 Exp $";
+static char *rcs_id = "$Id$";
 
 
 /*  Standard C Libraries  */

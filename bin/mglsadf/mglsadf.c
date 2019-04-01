@@ -8,7 +8,7 @@
 /*                           Interdisciplinary Graduate School of    */
 /*                           Science and Engineering                 */
 /*                                                                   */
-/*                1996-2016  Nagoya Institute of Technology          */
+/*                1996-2017  Nagoya Institute of Technology          */
 /*                           Department of Computer Science          */
 /*                                                                   */
 /* All rights reserved.                                              */
@@ -69,14 +69,14 @@
 *               filtered sequence                                       *
 *                      , y(0), y(1), ...,                               *
 *       notice:                                                         *
-*               if c==0, MLSA filter is used, P should be 4 or 5        *
+*               if c==0, MLSA filter is used, P should be 4, 5, 6, or 7 *
 *       require:                                                        *
 *               mglsadf(), mlsadf(), imglsadf(), mglsadft(), imglsadft()*
 *                                                                       *  
 ************************************************************************/
 
 static char *rcs_id =
-    "$Id: mglsadf.c,v 1.37 2016/12/25 05:00:19 uratec Exp $";
+    "$Id$";
 
 
 /*  Standard C Libraries  */
@@ -152,7 +152,7 @@ void usage(int status)
    fprintf(stderr, "  mgcfile:\n");
    fprintf(stderr, "       mel-generalized cepstrum (%s)\n", FORMAT);
    fprintf(stderr, "  notice:\n");
-   fprintf(stderr, "       if c==0, MLSA filter is used, P should be 4 or 5\n");
+   fprintf(stderr, "       if c==0, MLSA filter is used, P should be 4, 5, 6, or 7\n");
 #ifdef PACKAGE_VERSION
    fprintf(stderr, "\n");
    fprintf(stderr, " SPTK: version %s\n", PACKAGE_VERSION);
@@ -238,8 +238,8 @@ int main(int argc, char **argv)
    if (stage != 0) {            /* MGLSA */
       gamma = -1 / (double) stage;
    } else {                     /* MLSA */
-      if ((pd < 4) || (pd > 5)) {
-         fprintf(stderr, "%s : Order of Pade approximation should be 4 or 5!\n",
+      if ((pd < 4) || (pd > 7)) {
+         fprintf(stderr, "%s : Order of Pade approximation should be an integer in the rage of 4 to 7!\n",
                  cmnd);
          return (1);
       }
