@@ -8,7 +8,7 @@
 /*                           Interdisciplinary Graduate School of    */
 /*                           Science and Engineering                 */
 /*                                                                   */
-/*                1996-2016  Nagoya Institute of Technology          */
+/*                1996-2017  Nagoya Institute of Technology          */
 /*                           Department of Computer Science          */
 /*                                                                   */
 /* All rights reserved.                                              */
@@ -77,7 +77,7 @@
 *                                                                       *
 ************************************************************************/
 
-static char *rcs_id = "$Id: lsp2sp.c,v 1.8 2016/12/22 10:53:07 fjst15124 Exp $";
+static char *rcs_id = "$Id$";
 
 
 /*  Standard C Libraries  */
@@ -242,7 +242,11 @@ int main(int argc, char **argv)
             lsp[i] = lsp[i] / sampling * PI2;
       }
 
-      if (loggain == 0)
+      if (itype == 3)
+         for (i = gain; i < m + gain; i++)
+            lsp[i] /= 1000;
+
+      if (gain == 1 && loggain == 0)
          *lsp = log(*lsp);
 
       lsp2sp(lsp, m, x, no, gain);

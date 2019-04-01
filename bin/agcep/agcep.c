@@ -8,7 +8,7 @@
 /*                           Interdisciplinary Graduate School of    */
 /*                           Science and Engineering                 */
 /*                                                                   */
-/*                1996-2016  Nagoya Institute of Technology          */
+/*                1996-2017  Nagoya Institute of Technology          */
 /*                           Department of Computer Science          */
 /*                                                                   */
 /* All rights reserved.                                              */
@@ -75,7 +75,7 @@
 *                                                                             *
 ******************************************************************************/
 
-static char *rcs_id = "$Id: agcep.c,v 1.34 2016/12/22 10:52:59 fjst15124 Exp $";
+static char *rcs_id = "$Id$";
 
 
 /*  Standard C Libraries  */
@@ -172,7 +172,7 @@ int main(int argc, char **argv)
    FILE *fp = stdin, *fpe = NULL;
    Boolean ave = AVERAGE, norm = NORM;
    double lambda = LAMBDA, step = STEP, eps = EPS,
-       *c, *cc, *avec, tau = TAU, x, mu, gamma;
+       *c, *cc, *avec, tau = TAU, x, gamma;
 
    if ((cmnd = strrchr(argv[0], '/')) == NULL)
       cmnd = argv[0];

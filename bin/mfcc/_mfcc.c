@@ -8,7 +8,7 @@
 /*                           Interdisciplinary Graduate School of    */
 /*                           Science and Engineering                 */
 /*                                                                   */
-/*                1996-2016  Nagoya Institute of Technology          */
+/*                1996-2017  Nagoya Institute of Technology          */
 /*                           Department of Computer Science          */
 /*                                                                   */
 /* All rights reserved.                                              */
@@ -44,7 +44,7 @@
 
 /****************************************************************
 
-    $Id: _mfcc.c,v 1.16 2016/12/22 10:53:07 fjst15124 Exp $
+    $Id$
 
     Mel-Frequency Cepstral Analysis
 
@@ -103,16 +103,6 @@ double cal_energy(double *x, const int leng)
       energy += x[k] * x[k];
 
    return ((energy <= 0) ? EZERO : log(energy));
-}
-
-void hamming(double *x, const int leng)
-{
-   int k;
-   double arg;
-
-   arg = M_2PI / (leng - 1);
-   for (k = 0; k < leng; k++)
-      x[k] *= (0.54 - 0.46 * cos(k * arg));
 }
 
 void pre_emph(double *x, double *y, const double alpha, const int leng)
@@ -210,20 +200,20 @@ void mfcc(double *in, double *mc, const double sampleFreq, const double alpha,
    int k;
 
    if (x == NULL) {
-      x = dgetmem(wlng + wlng + flng + flng + n + 1 + m + 1);
+      x = dgetmem(wlng + wlng + flng + flng + 2 * n + 1 + m);
       px = x + wlng;
       wx = px + wlng;
       sp = wx + flng;
       fb = sp + flng;
-      dc = fb + n + 1;
+      dc = fb + 2 * n + 1;
    } else {
       free(x);
-      x = dgetmem(wlng + wlng + flng + flng + n + 1 + m + 1);
+      x = dgetmem(wlng + wlng + flng + flng + 2 * n + 1 + m);
       px = x + wlng;
       wx = px + wlng;
       sp = wx + flng;
       fb = sp + flng;
-      dc = fb + n + 1;
+      dc = fb + 2 * n + 1;
    }
 
    movem(in, x, sizeof(*in), wlng);
@@ -236,6 +226,7 @@ void mfcc(double *in, double *mc, const double sampleFreq, const double alpha,
    for (k = 0; k < wlng; k++)
       wx[k] = px[k];
    spec(wx, sp, flng);
+   fillz(fb + 1, 2 * n, sizeof(*fb));
    fbank(sp, fb, eps, sampleFreq, flng, n);
    /* calculate 0'th coefficient */
    for (k = 1; k <= n; k++)

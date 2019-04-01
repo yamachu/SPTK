@@ -8,7 +8,7 @@
 /*                           Interdisciplinary Graduate School of    */
 /*                           Science and Engineering                 */
 /*                                                                   */
-/*                1996-2016  Nagoya Institute of Technology          */
+/*                1996-2017  Nagoya Institute of Technology          */
 /*                           Department of Computer Science          */
 /*                                                                   */
 /* All rights reserved.                                              */
@@ -71,13 +71,13 @@
 *               filtered sequence                                            *
 *                       , y(0), y(1), ...,                                   *
 *       notice:                                                              *
-*               P = 4 or 5                                                   *
+*               P = 4, 5, 6, or 7                                            *
 *       require:                                                             *
 *               lmadf()                                                      *
 *                                                                            *
 *****************************************************************************/
 
-static char *rcs_id = "$Id: lmadf.c,v 1.35 2016/12/22 10:53:06 fjst15124 Exp $";
+static char *rcs_id = "$Id$";
 
 
 /*  Standard C Libraries  */
@@ -93,6 +93,7 @@ static char *rcs_id = "$Id: lmadf.c,v 1.35 2016/12/22 10:53:06 fjst15124 Exp $";
 #endif
 #endif
 
+#include <ctype.h>
 #include <math.h>
 
 #if defined(WIN32)
@@ -160,7 +161,7 @@ void usage(int status)
    fprintf(stderr, "  cfile:\n");
    fprintf(stderr, "       cepstrum (%s)\n", FORMAT);
    fprintf(stderr, "  notice:\n");
-   fprintf(stderr, "       P = 4 or 5\n");
+   fprintf(stderr, "       P = 4, 5, 6, or 7\n");
 #ifdef PACKAGE_VERSION
    fprintf(stderr, "\n");
    fprintf(stderr, " SPTK: version %s\n", PACKAGE_VERSION);
@@ -248,8 +249,8 @@ int main(int argc, char **argv)
          fp = getfp(*argv, "rb");
       }
    }
-   if ((pd < 4) || (pd > 5)) {
-      fprintf(stderr, "%s : Order of Pade approximation should be 4 or 5!\n",
+   if ((pd < 4) || (pd > 7)) {
+      fprintf(stderr, "%s : Order of Pade approximation should be an integer in the rage of 4 to 7!\n",
               cmnd);
       return (1);
    }

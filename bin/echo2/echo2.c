@@ -8,7 +8,7 @@
 /*                           Interdisciplinary Graduate School of    */
 /*                           Science and Engineering                 */
 /*                                                                   */
-/*                1996-2016  Nagoya Institute of Technology          */
+/*                1996-2017  Nagoya Institute of Technology          */
 /*                           Department of Computer Science          */
 /*                                                                   */
 /* All rights reserved.                                              */
@@ -51,11 +51,11 @@
 *       usage:                                                          *
 *               echo2 [ options ]                                       *
 *       options:                                                        *
-*               -n  :  no output newline                      [TRUE]    *
+*               -n  :  no output newline                      [FALSE]   *
 *                                                                       *
 ************************************************************************/
 
-static char *rcs_id = "$Id: echo2.c,v 1.25 2016/12/22 10:53:02 fjst15124 Exp $";
+static char *rcs_id = "$Id$";
 
 
 /*  Standard C Libraries  */
@@ -79,7 +79,7 @@ static char *rcs_id = "$Id: echo2.c,v 1.25 2016/12/22 10:53:02 fjst15124 Exp $";
 #endif
 
 /*  Default Values  */
-#define NEWLINE TR
+#define NONEWLINE FA
 
 char *BOOL[] = { "FALSE", "TRUE" };
 
@@ -94,7 +94,7 @@ void usage(int status)
    fprintf(stderr, "  usage:\n");
    fprintf(stderr, "       %s [ options ]\n", cmnd);
    fprintf(stderr, "  options:\n");
-   fprintf(stderr, "       -n    : no output newline   [%s]\n", BOOL[NEWLINE]);
+   fprintf(stderr, "       -n    : no output newline   [%s]\n", BOOL[NONEWLINE]);
    fprintf(stderr, "       -h    : print this message\n");
 #ifdef PACKAGE_VERSION
    fprintf(stderr, "\n");
@@ -107,7 +107,7 @@ void usage(int status)
 
 int main(int argc, char **argv)
 {
-   int newline = NEWLINE;
+   int nonewline = NONEWLINE;
 
    if ((cmnd = strrchr(argv[0], '/')) == NULL)
       cmnd = argv[0];
@@ -117,7 +117,7 @@ int main(int argc, char **argv)
       if (**++argv == '-') {
          switch (*(*argv + 1)) {
          case 'n':
-            newline = 1 - newline;
+            nonewline = 1 - nonewline;
             break;
          case 'h':
             usage(0);
@@ -132,7 +132,7 @@ int main(int argc, char **argv)
       }
    }
 
-   if (newline)
+   if (!nonewline)
       putc('\n', stderr);
 
    return 0;
