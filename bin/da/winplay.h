@@ -8,7 +8,7 @@
 /*                           Interdisciplinary Graduate School of    */
 /*                           Science and Engineering                 */
 /*                                                                   */
-/*                1996-2016  Nagoya Institute of Technology          */
+/*                1996-2017  Nagoya Institute of Technology          */
 /*                           Department of Computer Science          */
 /*                                                                   */
 /* All rights reserved.                                              */
@@ -52,7 +52,7 @@
 *                                                                       *
 *************************************************************************/
 
-/* $Id: winplay.h,v 1.10 2016/12/22 10:53:01 fjst15124 Exp $ */
+/* $Id$ */
 
 #ifndef __WINPLAY_H__
 #define __WINPLAY_H__

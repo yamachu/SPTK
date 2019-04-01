@@ -8,7 +8,7 @@
 /*                           Interdisciplinary Graduate School of    */
 /*                           Science and Engineering                 */
 /*                                                                   */
-/*                1996-2016  Nagoya Institute of Technology          */
+/*                1996-2017  Nagoya Institute of Technology          */
 /*                           Department of Computer Science          */
 /*                                                                   */
 /* All rights reserved.                                              */
@@ -43,8 +43,8 @@
 /* ----------------------------------------------------------------- */
 
 /***********************************************************
-   $Id: SPTK.h,v 1.66 2016/12/25 05:00:20 uratec Exp $ 
-   
+   $Id$
+
    Speech Signal Processing Toolkit
    SPTK.h
 ***********************************************************/
@@ -188,6 +188,7 @@ double acep(double x, double *c, const int m, const double lambda,
             const double step, const double tau, const int pd,
             const double eps);
 void acorr(double *x, int l, double *r, const int np);
+int acr2csm(double *r, double *csm, const int m);
 double agcep(double x, double *c, const int m, const int stage,
              const double lambda, const double step, const double tau,
              const double eps);
@@ -205,6 +206,7 @@ void ic2ir(double *h, const int leng, double *c, const int nc);
 void c2sp(double *c, const int m, double *x, double *y, const int l);
 void clip(double *x, const int l, const double min, const double max,
           double *y);
+void csm2acr(double *csm, double *r, const int m);
 int dft(double *pReal, double *pImag, const int nDFTLength);
 void dct(double *in, double *out, const int size, const int m,
          const Boolean dftmode, const Boolean compmode);
@@ -347,6 +349,7 @@ void phase(double *p, const int mp, double *z, const int mz, double *ph,
 double poledf(double x, double *a, int m, double *d);
 double poledft(double x, double *a, int m, double *d);
 void reverse(double *x, const int l);
+int rlevdur(double *a, double *r, const int m, double eps);
 double rmse(double *x, double *y, const int n);
 void output_root_pol(complex * x, int odr, int form);
 void root_pol(double *a, const int odr, complex * x, const int a_zero,

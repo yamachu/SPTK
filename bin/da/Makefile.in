@@ -663,8 +663,8 @@ uninstall-am: uninstall-binPROGRAMS uninstall-binSCRIPTS
 .PRECIOUS: Makefile
 
 
-@USEDA_TRUE@da: da.in
-@USEDA_TRUE@	$(replace_path) < da.in > $@
+@USEDA_TRUE@da: @srcdir@/da.in
+@USEDA_TRUE@	$(replace_path) < "$<" > $@
 @USEDA_TRUE@	chmod +x $@
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.

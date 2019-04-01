@@ -1,10 +1,10 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.59)
-AC_INIT(SPTK, 3.10, http://sourceforge.net/projects/sp-tk/, SPTK)
+AC_INIT(SPTK, 3.11, http://sourceforge.net/projects/sp-tk/, SPTK)
 AC_CONFIG_AUX_DIR([config])
 AC_COPYRIGHT(Copyright 1984-2007 Tokyo Institute of Technology)
-AC_COPYRIGHT(Copyright 1996-2016 Nagoya Institute of Technology)
+AC_COPYRIGHT(Copyright 1996-2017 Nagoya Institute of Technology)
 AM_INIT_AUTOMAKE([nostdinc subdir-objects])
 AC_SUBST(PACKAGE_NAME)
 AC_SUBST(PACKAGE_VERSION)
@@ -69,7 +69,7 @@ if test "$find_strrchr" != "yes"; then
 	AC_MSG_ERROR("Cannot find strrchr() or rindex()")
 fi
 
-# Checks for double 
+# Checks for double
 use_double=no
 IO_SYMBOL='f'
 IO_FORMAT='float'
@@ -160,6 +160,7 @@ AC_CONFIG_FILES([Makefile
                  bin/Makefile
                  bin/acep/Makefile
                  bin/acorr/Makefile
+                 bin/acr2csm/Makefile
                  bin/agcep/Makefile
                  bin/amcep/Makefile
                  bin/average/Makefile
@@ -173,6 +174,7 @@ AC_CONFIG_FILES([Makefile
                  bin/cat2/Makefile
                  bin/cdist/Makefile
                  bin/clip/Makefile
+                 bin/csm2acr/Makefile
                  bin/da/Makefile
                  bin/dct/Makefile
                  bin/decimate/Makefile
@@ -252,6 +254,7 @@ AC_CONFIG_FILES([Makefile
                  bin/ramp/Makefile
                  bin/rawtowav/Makefile
                  bin/reverse/Makefile
+                 bin/rlevdur/Makefile
                  bin/rmse/Makefile
                  bin/root_pol/Makefile
                  bin/sin/Makefile
@@ -267,7 +270,7 @@ AC_CONFIG_FILES([Makefile
                  bin/uels/Makefile
                  bin/ulaw/Makefile
                  bin/us/Makefile
-                 bin/vc/Makefile 
+                 bin/vc/Makefile
                  bin/vopr/Makefile
                  bin/vq/Makefile
                  bin/vstat/Makefile

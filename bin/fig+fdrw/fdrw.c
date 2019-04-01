@@ -8,7 +8,7 @@
 /*                           Interdisciplinary Graduate School of    */
 /*                           Science and Engineering                 */
 /*                                                                   */
-/*                1996-2016  Nagoya Institute of Technology          */
+/*                1996-2017  Nagoya Institute of Technology          */
 /*                           Department of Computer Science          */
 /*                                                                   */
 /* All rights reserved.                                              */
@@ -70,7 +70,7 @@
 *                                                                       *
 ************************************************************************/
 
-static char *rcs_id = "$Id: fdrw.c,v 1.32 2016/12/22 10:53:03 fjst15124 Exp $";
+static char *rcs_id = "$Id$";
 
 
 /*  Standard C Libraries  */
@@ -118,7 +118,7 @@ int drw(FILE * fp);
 #define CTYPE  0
 #define YMIN  -1.0
 #define YMAX  1.0
-#define BUF_LNG  5000
+#define BUF_LNG  1000000
 #define H  2.5
 #define SC  1.5
 
