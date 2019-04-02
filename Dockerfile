@@ -1,5 +1,3 @@
-# automake 1.15があるのが現状18.04
-# https://ubuntu.pkgs.org/18.04/ubuntu-main-amd64/automake_1.15.1-3ubuntu2_all.deb.html
 FROM ubuntu:18.04
 
 ARG TAG=master
