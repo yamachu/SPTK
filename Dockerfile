@@ -9,6 +9,7 @@ RUN apt-get update \
     && git clone https://github.com/yamachu/SPTK.git \
     && cd SPTK \
     && git checkout $TAG \
+    && autoreconf -vfi \
     && ./configure --prefix=/sptk --exec-prefix=/sptk \
     && make \
     && make install 
