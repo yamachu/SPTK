@@ -16,3 +16,5 @@ FROM frolvlad/alpine-glibc:alpine-3.9
 
 COPY --from=0 /sptk /sptk
 ENV PATH $PATH:/sptk/bin
+
+WORKDIR /opt
